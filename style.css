@@ -3,22 +3,87 @@
 
     /* Colors */
     /* Primary color */
-    --hue-color:250;
 
     /* Color mode */
-    --first-color:hsl(var(--hue-color),69%,61%);
+    --first-color:var(--hue-color);
     --first-color-second:hsl(var(--hue-color),69%,61%);
     --first-color-alt:hsl(var(--hue-color),57%,53%);
     --first-color-lighter:hsl(var(--hue-color),92%,85%);
-    --title-color:hsl(var(--hue-color),8%,15%);
+    --title-color:Orange;
     --text-color:hsl(var(--hue-color),8%,65%);
     --first-color:hsl(var(--hue-color),70%,96%);
     --first-color:hsl(var(--hue-color),60%,99%);
+    --container-color:#FFF;
+    --font-family: 'Bebas Neue', cursive;
+    --background-color:#282828;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium:500;
+    --font-semi-bold:600;
+
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 }
 .nav{
     max-width: 968px;
     height: var(--header-height);
 }
+
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+.grid{
+    display: grid;
+    gap:1.5rem;
+}
+/*================= BASE =================*/
 *{
-    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html{
+ scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--font-family);
+    font-size: var(--normal-font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+h1,h2,h3,h4{
+    color: var(--title-color);       /*var(--first-color); */
+    font-weight: var(--font-semi-bold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section{
+    padding:2rem 0 4rem;
+}
+.section_title{
+    font-size:var(--h1-font-size);
 }
