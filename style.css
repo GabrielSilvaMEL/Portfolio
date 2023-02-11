@@ -69,7 +69,7 @@ body{
 }
 h1,h2,h3,h4{
     color: var(--title-color);       /*var(--first-color); */
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-medium);
 }
 ul{
     list-style: none;
