@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
 
-    <!-- FONTE MONTSERRAT -->
+    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;400;500&display=swap"
-        rel="stylesheet">
-    <!-- FONTE MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;400;500&family=Poppins:wght@100;200;300;700&display=swap" rel="stylesheet">    <!-- FONTE MONTSERRAT -->
+<!-- 
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+ -->
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
@@ -21,32 +25,97 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
-<body>
+<body class="canto">
     <header class="header" id="header">
 
-        <div>
-            <a href="" class="header botao">About</a>
-            <a href="" class="header botao">Skills</a>
-            <a href="" class="header botao">Projects</a>
-            <a href="" class="header botao">Contact</a>
+        <div class="navbar">
+            <a href="" class="botao">About</a>
+            <a href="" class="botao">Skills</a>
+            <a href="" class="botao">Projects</a>
+            <a href="" class="botao">Contact</a>
         </div>
     </header>
+    
+    
+    <!-- ======================== ME ========================-->
+    <div class="grid2 mainback border">
 
+        
+            
+            <!-- <img src="corvo.png" width="100" alt="My Image" style="vertical-align: top; float: left;  
+            margin: 0 30px 0 0; word-break: break-word;" /> -->
+            <h2 class="bold">Olá, eu sou </h2>
+            <h2 class="bold">Gabriel Silva Alves</h2>
+            <hr class="secondcolor">
+            <p class="bold">Estudante de Análise e Desenvolvimento de sistemas</p>
+            <p class="bold">20 anos</p>
 
-    <div class="grid2">
-
-        <img align="left" src="corvo.png">
-        <h1>Gabriel Silva Alves</h1>
-        <p class="">Desenvolvedor full stack. </p>
+        <img src="corvo.png"  />
 
     </div>
+    <!-- ========================/ME ========================-->
 
+
+    <!-- ======================== SKILLS ========================-->
     <div class="grid2">
-        <p>Projetos:</p>
+        <h2>Skills</h2>
         <div><img src="" alt=""></div>
         <p>Eu sou o Gabriel, desenvolvedor full stack. </p>
 
     </div>
+    <div class="grid2 wide">
+        <h2>Projetos</h2>
+        <div><img src="" alt=""></div>
+        
+
+
+        <!-- Vitrine -->
+        <div class="vitrine wide botao mid mainback">
+
+            <!-- Projeto 1 -->
+            <div class="project botao">
+                <div>
+                <img src="project1.png" width="100%" height="100%" alt="My Image" style="vertical-align: top; float: left;  
+            margin: 0 30px 0 0; word-break: break-word;" />
+                <h4>Aulas JS</h4>
+                <p>Diferentes lógicas reunidas em um site desenvolvido inteiramente por mim</p>
+                    
+                <!-- Imagens -->
+                <div class="deitado">
+                <a href="https://gabrielsilvamel.github.io/Aulas_JS/" class="capital" target="_blank">Abrir</a>
+                <img title="HTML5" style="width:10%; height:10%;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <img title="CSS3" style="width:10%; height:10%;"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                </div>
+            </div>
+                
+                
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project botao">
+                <img src="corvo.png" alt="" class="botao">
+                <h4>Projeto Web</h4>
+                <p>Site de vendas que conta com CRUD </p>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project botao">
+                <img src="corvo.png" alt="" class="botao">
+                <h4>Lógicas JS</h4>
+                <p>Diferentes lógicas reunidas em um site desenvolvido</p>
+            </div>
+
+            
+            
+        </div>
+        
+
+    </div>
+
+
+
+
+
 
 </body>
 
