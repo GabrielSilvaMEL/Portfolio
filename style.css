@@ -15,17 +15,19 @@
 
 
     /* BACKGROUND */
-        --background-color:black;
+        --background-color:rgb(22, 17, 17);
         /* rgba(170, 190, 255, 0.178); */
         --background-color-second:#black;
 
 
     --container-color:#FFF;
     --font-family: 'Poppins', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
-    --border-radius:10px;
 
-    
+    /* font-family: 'Bebas Neue', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif; */
+
+    --border-radius:10px;
 
     --big-font-size: 2rem;
     --h1-font-size: 3rem;
@@ -120,11 +122,8 @@ img{
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
+
 .grid{
-    display: grid;
-    gap:1.5rem;
-}
-.grid2{
     display:grid;
     place-items: center;
     margin-top: 5%;
@@ -167,9 +166,12 @@ display: flex;
 gap:10px;
 padding:10px;
 width: 50%;
+}
 
- }
- .secondcolor{
+.top{
+    margin-top:3%;
+}
+.secondcolor{
     color:var(--second-color)
  }
  .project{
@@ -193,12 +195,38 @@ width: 50%;
 .mainback{
     background-color:var(--background-color-second);
 }
+/* Centralizador de div */
 .canto{
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
 }
+/* Fonte negrito */
 .bold{font-weight:bold;}
+
+/* Cursor default */
 .cursor{
     cursor:default;
 }
+
+/* Círculo */
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+.type1 {
+    width: 50px;
+    height: 50px;
+}
+/* cor do texto */
+.textcolor{
+    color:var(--text-color)
+}
+
+.botaotop{
+    position:fixed;
+    
+    bottom: 5%;
+    right: 5%;
+}
+
