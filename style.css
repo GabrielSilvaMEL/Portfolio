@@ -1,33 +1,45 @@
-:root{
-    --header-height:3rem;
+:root {
+    --header-height: 3rem;
 
     /* Colors */
     /* Primary color */
 
     /* Color mode */
+    --first-color: #9c6644;
+    --second-color: #9c6644;
+    --darker-color: #BBD1EA;
+    --title-color: #7f5539;
+
+    --text-color: #323031;
+    --white-color:white;
+    /* rgb(48, 59, 59); */
+
+    /* BACKGROUND */
+        --background-color: #ffe8d6;
+        /* rgba(170, 190, 255, 0.178); */
+        --background-color-second: var(--background-color);
+    /* 
+        
     --first-color:#3B5249;
     --second-color:#519872;
     --darker-color:#BBD1EA;
     --title-color:#white;
 
     --text-color:#BEC5AD;
-    /* rgb(48, 59, 59); */
-
-
-    /* BACKGROUND */
-        --background-color:rgb(22, 17, 17);
-        /* rgba(170, 190, 255, 0.178); */
-        --background-color-second:#black;
-
-
-    --container-color:#FFF;
+    /* rgb(48, 59, 59); 
+    --background-color: rgb(22, 17, 17);
+         rgba(170, 190, 255, 0.178); 
+        --background-color-second: #black;
+    */
+    
+     --container-color: #FFF;
     --font-family: 'Poppins', sans-serif;
 
     /* font-family: 'Bebas Neue', cursive;
         font-family: 'Montserrat', sans-serif;
         font-family: 'Poppins', sans-serif; */
 
-    --border-radius:10px;
+    --border-radius: 10px;
 
     --big-font-size: 2rem;
     --h1-font-size: 3rem;
@@ -37,8 +49,8 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    --font-medium:500;
-    --font-semi-bold:600;
+    --font-medium: 500;
+    --font-semi-bold: 600;
 
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -49,182 +61,224 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 }
+
 /*================= BASE =================*/
-*{
+* {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-html{
- scroll-behavior: smooth;
+
+html {
+    scroll-behavior: smooth;
 }
-p{
-    color:var(--second-color)
+
+p {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    
 }
-body{
+
+body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--font-family);
     font-size: var(--normal-font-size);
     background-color: var(--background-color);
     color: var(--text-color);
 }
-h1,h2,h3,h4{
-    color: var(--title-color);       /*var(--first-color); */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    /*var(--first-color); */
     font-weight: var(--font-medium);
 }
-h1{
+
+h1 {
     font-size: var(--h1-font-size);
-    
+
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:var(--text-color);
+    color: var(--text-color);
     font-weight: bold !important;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
+/* <!--======================== CORES ========================--> */
 
-.navbar{
+.text {
+    color: var(--text-color)
+}
+.secondcolor {
+    color: var(--second-color)
+}
+
+.textcolor {
+    color: var(--text-color)
+}
+/* <!--======================== CORES ========================--> */
+
+
+.navbar {
 
     /* Display flex */
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     width: 20%;
     margin-top: 10%;
     bottom: 20%;
     left: 40%;
     font-size: var(--h3-font-size);
 }
-.border{
+
+.border {
     border-radius: var(--border-radius);
 }
-.capital{
-    font-size:var(--big-font-size)
+
+.capital {
+    font-size: var(--big-font-size)
 }
-.text{
-    color: var(--text-color)
-}
-.nav{
+
+
+.nav {
     max-width: 968px;
     height: var(--header-height);
 }
 
-.container{
+.container {
     max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
 
-.grid{
-    display:grid;
+.grid {
+    display: grid;
     place-items: center;
     margin-top: 5%;
-    
+
 }
 
-.row{
-    width:100%;
-    height:50%;
+.row {
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
 }
 
-.botao{
+.botao {
     color: var(--second-color);
     border-radius: 10px;
-    border:1px solid var(--first-color);
-    padding:10px;
-}
-.botao:hover{
-    color:var(--text-color);
-    border-color: var(--text-color);
-    background-color: var(--second-color);
-    cursor:default;
-}
-.section{
-    padding:2rem 0 4rem;
-}
-.section_title{
-    font-size:var(--h1-font-size);
-}
-.box {
-    display: flex;
-    align-items:center;
- }
-.vitrine { 
-display: flex;
-gap:10px;
-padding:10px;
-width: 50%;
+    border: 1px solid var(--first-color);
+    padding: 10px;
 }
 
-.top{
-    margin-top:3%;
+.botao:hover {
+    color: var(--text-color);
+    border-color: var(--text-color);
+    background-color: var(--second-color);
+    cursor: default;
 }
-.secondcolor{
-    color:var(--second-color)
- }
- .project{
-    width:30%;
- }
-.wide{
-    width:100%
+
+.section {
+    padding: 2rem 0 4rem;
 }
-.mid{
+
+.section_title {
+    font-size: var(--h1-font-size);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.vitrine {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.top {
+    margin-top: 3%;
+}
+
+.project {
+    width: 30%;
+}
+
+.wide {
+    width: 100%
+}
+
+.mid {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
 }
-.midlaid{
+
+.midlaid {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.mainback{
-    background-color:var(--background-color-second);
+
+.mainback {
+    background-color: var(--background-color-second);
 }
+
 /* Centralizador de div */
-.canto{
-    width:90%;
+.canto {
+    width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 /* Fonte negrito */
-.bold{font-weight:bold;}
+.bold {
+    font-weight: bold;
+}
 
 /* Cursor default */
-.cursor{
-    cursor:default;
+.cursor {
+    cursor: default;
 }
 
 /* Círculo */
 .circleBase {
     border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
 }
+
 .type1 {
     width: 50px;
     height: 50px;
 }
-/* cor do texto */
-.textcolor{
-    color:var(--text-color)
-}
 
-.botaotop{
-    position:fixed;
+/* cor do texto */
+
+
+.botaotop {
+    position: fixed;
     bottom: 5%;
     right: 5%;
 }
