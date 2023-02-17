@@ -5,19 +5,19 @@
     /* Primary color */
 
     /* Color mode */
-    --first-color: #240046;
-    --second-color: #7b2cbf ;
+    --first-color: #574219;
+    --second-color: #7a5e24 ;
     --darker-color: #3c096c;
-    --title-color: #3c096c;
+    --title-color: #574219;
 
     /* #ba181b;
     #e5383b; */
-    --text-color: #3c096c;
+    --text-color: #574219;
     --white-color:white;
     /* rgb(48, 59, 59); */
 
     /* BACKGROUND */
-        --background-color: white;
+        --background-color: #ebd9b1;
         /* rgba(170, 190, 255, 0.178); */
         --background-color-second: var(--background-color);
     /* 
@@ -190,10 +190,24 @@ img {
 .botao:hover {
     color: var(--white-color);
     border-color: var(--text-color);
-    background-color: var(--second-color);
+    background-color: var(--first-color);
     cursor: default;
 }
 
+.botaocontact {
+    color: white;
+    border-radius: 10px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    background-color: var(--second-color);
+    
+}
+.botaocontact:hover {
+    color: var(--white-color);
+    border-color: var(--text-color);
+    background-color: var(--first-color);
+    cursor: default;
+}
 .section {
     padding: 2rem 0 4rem;
 }
