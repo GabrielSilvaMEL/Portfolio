@@ -5,19 +5,25 @@
     /* Primary color */
 
     /* Color mode */
-    --first-color: #574219;
-    --second-color: #7a5e24 ;
-    --darker-color: #3c096c;
+    --first-color: white;
+    --second-color: rgb(255, 174, 0) ;
+    --darker-color: rgba(12, 0, 68, 0.918);
     --title-color: #574219;
 
     /* #ba181b;
     #e5383b; */
-    --text-color: #574219;
+    --text-color: white;
     --white-color:white;
     /* rgb(48, 59, 59); */
 
+    /* 
+    #ebd9b1
+    #7a5e24
+    #574219
+    */
+
     /* BACKGROUND */
-        --background-color: #ebd9b1;
+        /* --background-color: rgb(236, 236, 236); */
         /* rgba(170, 190, 255, 0.178); */
         --background-color-second: var(--background-color);
     /* 
@@ -35,7 +41,7 @@
     */
     
      --container-color: #FFF;
-    --font-family: 'Poppins', sans-serif;
+     --font-family: 'Roboto', sans-serif;
 
     /* font-family: 'Bebas Neue', cursive;
         font-family: 'Montserrat', sans-serif;
@@ -87,12 +93,25 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--background-color);
     color: var(--text-color);
+
+
+
+
+
+/* BACKGROUND--------------------------------------------------------------------------------------------------------------- */
+    background: linear-gradient(130deg, rgba(6, 1, 26, 0.918) 60%, rgb(255, 174, 0));
+
+
+
+
+
+
+
+
+
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
     color: var(--first-color);
     /*var(--first-color); */
     font-weight: var(--font-medium);
@@ -100,7 +119,6 @@ h4 {
 
 h1 {
     font-size: var(--h1-font-size);
-
 }
 
 ul {
@@ -117,12 +135,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.fontsemi{
+    font-size:var(--font-semi-bold)
+}
 /* <!--======================== CORES ========================--> */
 
 .text {
     color: var(--text-color)
 }
-.secondcolor {
+.secondcolor{
     color: var(--second-color)
 }
 
@@ -132,14 +154,59 @@ img {
 .black{
     color:black;
 }
+.first{
+    color:var(--first-color)
+}
+.gray{
+    color:gray;
+}
+
 /* <!--======================== CORES ========================--> */
 
+.zerocinco{
+    font-size: 1.25rem;
+}
+/* <!--======================== BOTAO ========================--> */
+.botao {
+    color: white;
+    border-radius: 10px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    background-color: var(--second-color);
+}
+.botao:hover {
+    color: var(--white-color);
+    border-color: var(--text-color);
+    background-color: var(--first-color);
+    cursor: default;
+}
+.botaocontact {
+    color: white;
+    border-radius: 10px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    background-color: var(--second-color);
+    
+}
+.botaocontact:hover {
+    color: var(--white-color);
+    border-color: var(--text-color);
+    background-color: var(--first-color);
+    cursor: default;
+}
+
+.navbarbutton{
+    
+    font-size: 1.5rem;
+}
+/* <!--======================== BOTAO ========================--> */
 
 .navbar {
-
     position: fixed;
-    top: 5%;
-    right: 5%;
+    top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .border {
@@ -150,7 +217,12 @@ img {
     font-size: var(--big-font-size)
 }
 
-
+.titulo{
+    padding: .75rem;
+    color: var(--first-color);
+    border:2px solid var(--first-color);
+    border-radius: 10px;
+}
 .nav {
     max-width: 968px;
     height: var(--header-height);
@@ -166,7 +238,6 @@ img {
     display: grid;
     place-items: center;
     margin-top: 5%;
-
 }
 
 .row {
@@ -177,36 +248,15 @@ img {
     flex-direction: row;
     align-items: center;
 }
-
-.botao {
-    color: white;
-    border-radius: 10px;
-    border: 1px solid var(--second-color);
-    padding: 10px;
-    background-color: var(--second-color);
-    
+.col{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-.botao:hover {
-    color: var(--white-color);
-    border-color: var(--text-color);
-    background-color: var(--first-color);
-    cursor: default;
-}
-
-.botaocontact {
-    color: white;
-    border-radius: 10px;
-    border: 1px solid var(--second-color);
-    padding: 10px;
-    background-color: var(--second-color);
-    
-}
-.botaocontact:hover {
-    color: var(--white-color);
-    border-color: var(--text-color);
-    background-color: var(--first-color);
-    cursor: default;
+.tela{
+    height:35rem
 }
 .section {
     padding: 2rem 0 4rem;
@@ -286,12 +336,24 @@ img {
     width: 50px;
     height: 50px;
 }
-
 /* cor do texto */
-
 
 .botaotop {
     position: fixed;
     bottom: 5%;
     right: 5%;
 }
+
+.spaceskip{
+    white-space:break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50%;
+}
+/* #grad {
+    height: 100%;
+    width: 3rem;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    position: fixed;
+  } */

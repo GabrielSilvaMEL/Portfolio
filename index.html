@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
 
-
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+
+
+
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;400;500&family=Poppins:wght@100;200;300;700&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;400;500&family=Poppins:wght@100;200;300;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+
     <!-- /FONTES -->
 
     <!-- CSS -->
@@ -23,64 +31,139 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
-<!-- ======================== Botão back to top ========================-->
-
-<a href="#me" class="botaotop uil uil-angle-up bold "></a>
-
-<!-- ======================== /Botão back to top ========================-->
-
 
 <body class="canto">
+    <!-- ======================== Botão back to top ========================-->
+
+    <a href="#about" class="botaotop uil uil-angle-up bold " style="font-size:4rem"></a>
+
+    <!-- ======================== /Botão back to top ========================-->
+
+
+    <header class="navbar">
+        <div class="row">
+            <div class="col">
+                <p>Gabriel</p>
+            </div>
+            <div class="row " style="gap:1rem; align-content:flex-end;">
+                <a href="#about" class="navbarbutton">About</a>
+                <a href="#skills" class="navbarbutton">Skills</a>
+                <a href="#projects" class="navbarbutton">Projects</a>
+                <a href="#contact" class="navbarbutton">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
 
     <!-- ======================== ME ========================-->
-    <div class="grid mainback border">
+    <div class="tela">
+        <div class="grid mainback border">
 
-        <!-- <img src="corvo.png" width="100" alt="My Image" style="vertical-align: top; float: left;  
+            <!-- <img src="corvo.png" width="100" alt="My Image" style="vertical-align: top; float: left;  
             margin: 0 30px 0 0; word-break: break-word;" /> -->
-        <h2 class="bold" id="me">Olá, eu sou </h2>
-        <h2 class="bold">Gabriel Silva Alves</h2>
-        <p class="bold">Estudante de Análise e Desenvolvimento de sistemas</p>
-        <!-- <p class="bold">20 anos</p> -->
-        <div class="top">
-            <img src="img/corvo.png" style="width:200px "/>
-        </div>
-        <!-- <p>Atualmente busco estágio na área da tecnologia</p> -->
-      
-        <header class="navbar botao">
-            <a href="about" class="botao">About</a>
-            <a href="#skills" class="botao">Skills</a>
-            <a href="#projects" class="botao">Projects</a>
-            <a href="#contact" class="botao">Contact</a>
-        </header>
-        
-        <div class="mid">
-            <a class="bold" href="#skills">Scroll Down</a>
-            <a class="uil uil-angle-down bold" href="#skills"></a>
+            <div style="margin-top:7rem"></div>
+            <h2 class="bold">Gabriel Silva Alves</h2>
+            <p class="bold">Estudante de Análise e Desenvolvimento de sistemas</p>
+            <!-- <p class="bold">20 anos</p> -->
+            <div class="top">
+                <img src="img/corvo.png" style="width:5rem " />
+            </div>
+
+            <div class="mid">
+                <a class="bold" href="#about">Scroll Down</a>
+                <a class="uil uil-angle-down bold" href="#about"></a>
+            </div>
         </div>
     </div>
-
     <br>
-    <!-- ========================/ME ========================-->
+    <!-- ======================== /ME ========================-->
 
-    <div class="grid">
-        <h2 class="bold" id="about">About me</h2>
-        <div><img src="" alt=""></div>
-        <p> Tenho 20 anos e logo estarei graduado em <span>Análise e desenvolvimento de sistemas</span> na Fatec de Presidente Prudente.</p>
+
+
+
+    <!-- ======================== ABOUT ME ========================-->
+    <div class="tela" id="about">
+        <div class="grid">
+
+
+            <h1 class="bold">About me</h2>
+
+
+            <div class="vitrine wide mid mainback">
+
+                <div class="col">
+                    <div style="margin-top:3rem"></div>
+                    <center>
+                    <p> Tenho 20 anos e logo estarei graduado em
+                        <span class="first bold">Análise e desenvolvimento de sistemas</span> 
+                        na Fatec de Presidente Prudente.
+                        
+                    </p>
+                    </center>
+                </div>
+
+                <div class="col">
+                    <div style="margin-top:3rem"></div>
+                    <center>
+                    <h3>Experiências</h3>
+                    <div style="margin-top:1rem"></div>
+                    <h4>Desenvolvimento Web</h4>
+                    <p> 
+                        <code>HTML, CSS, JavaScript, React</code>
+                    </p>
+                    
+                    <div style="margin-top:1rem"></div>
+                    <h4>Desenvolvimento Back-end</h4>
+                    <p> 
+                        <code>PHP, C#</code>
+                    </p>
+                    <div style="margin-top:1rem"></div>
+                    <h4>Outras tecnologias e ferramentas</h4>
+                    
+                    <p> 
+                        <code>MySQL, Laravel(Blade e Vite), VUE</code>
+                    </p>
+                    </center>
+                </div>
+
+
+
+                <div class="col">
+
+                    <div style="margin-top:3rem"></div>
+                    <center>
+                    <h3>Cursos</h3>
+                    <div style="margin-top:1rem"></div>
+                    <h4>Cisco Networking Academy - Remoto</h4>
+                    <p class="zerocinco"> 
+                        Gerenciamento e manutenção de computadores, redes e afins
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
     </div>
+    <!-- ======================== ABOUT ME ========================-->
+
+
+
+
+
+
 
     <!-- ======================== SKILLS ========================-->
-    <div class="grid">
-        <h2 class="bold" id="skills">Skills</h2>
-        <div><img src="" alt=""></div>
-        <p>Eu sou o Gabriel, desenvolvedor full stack. </p>
-    </div>
 
     <div class="grid wide">
         <h2 class="bold" id="projetos">Projetos</h2>
         <div><img src="" alt=""></div>
 
         <!-- Vitrine -->
-        <div class="vitrine wide  mid mainback">
+        <div class="vitrine wide mid mainback">
 
             <!-- Projeto 1 -->
             <div class="project">
@@ -111,11 +194,11 @@
             </div>
 
             <!-- Projeto 3 -->
-            <div class="project ">
+            <!-- <div class="project ">
                 <img src="img/corvo.png" alt="" class="botao">
                 <h4>Lógicas JS</h4>
                 <p>Diferentes lógicas reunidas em um site desenvolvido</p>
-            </div>
+            </div> -->
 
         </div>
 
@@ -129,12 +212,11 @@
         <div class="mid">
             <!-- Linkedin -->
             <a href="https://www.linkedin.com/in/gabrielsilvalves331/"
-            class="uil uil-linkedin circleBase botaocontact type1 mid" target="_blank"></a>
-            
+                class="uil uil-linkedin circleBase botaocontact type1 mid" target="_blank"></a>
+
             <!-- Github -->
-            <a href="https://github.com/gabrielsilvamel"
-            class="uil uil-github circleBase botaocontact type1 mid"
-            target="_blank"></a>
+            <a href="https://github.com/gabrielsilvamel" class="uil uil-github circleBase botaocontact type1 mid"
+                target="_blank"></a>
         </div>
     </div>
 
