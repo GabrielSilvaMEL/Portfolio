@@ -10,35 +10,8 @@
     --darker-color: rgba(12, 0, 68, 0.918);
     --title-color: #574219;
 
-    /* #ba181b;
-    #e5383b; */
     --text-color: white;
     --white-color:white;
-    /* rgb(48, 59, 59); */
-
-    /* 
-    #ebd9b1
-    #7a5e24
-    #574219
-    */
-
-    /* BACKGROUND */
-        /* --background-color: rgb(236, 236, 236); */
-        /* rgba(170, 190, 255, 0.178); */
-        --background-color-second: var(--background-color);
-    /* 
-        
-    --first-color:#3B5249;
-    --second-color:#519872;
-    --darker-color:#BBD1EA;
-    --title-color:#white;
-
-    --text-color:#BEC5AD;
-    /* rgb(48, 59, 59); 
-    --background-color: rgb(22, 17, 17);
-         rgba(170, 190, 255, 0.178); 
-        --background-color-second: #black;
-    */
     
      --container-color: #FFF;
      --font-family: 'Roboto', sans-serif;
@@ -47,6 +20,9 @@
         font-family: 'Montserrat', sans-serif;
         font-family: 'Poppins', sans-serif; */
 
+
+
+    --background-color:rgb(19, 17, 17);
     --border-radius: 10px;
 
     --big-font-size: 2rem;
@@ -82,7 +58,7 @@ html {
 }
 
 p {
-    color: var(--second-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     
 }
@@ -99,7 +75,7 @@ body {
 
 
 /* BACKGROUND--------------------------------------------------------------------------------------------------------------- */
-    background: linear-gradient(130deg, rgba(6, 1, 26, 0.918) 60%, rgb(255, 174, 0));
+    /* background: linear-gradient(130deg, rgba(6, 1, 26, 0.918) 60%, rgb(255, 174, 0)); */
 
 
 
@@ -112,7 +88,7 @@ body {
 }
 
 h1,h2,h3,h4 {
-    color: var(--first-color);
+    color: var(--second-color);
     /*var(--first-color); */
     font-weight: var(--font-medium);
 }
@@ -160,7 +136,12 @@ img {
 .gray{
     color:gray;
 }
-
+.backgroundcolor{
+    color: var(--background-color);
+}
+.green{
+    color:green
+}
 /* <!--======================== CORES ========================--> */
 
 .zerocinco{
@@ -195,15 +176,14 @@ img {
     cursor: default;
 }
 
-.navbarbutton{
-    
-    font-size: 1.5rem;
+.navbarbutton{ 
+    font-size: 1.3rem;
 }
 /* <!--======================== BOTAO ========================--> */
 
 .navbar {
-    position: fixed;
-    top: 1rem;
+    position: relative;
+    top: 2rem;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -215,6 +195,9 @@ img {
 
 .capital {
     font-size: var(--big-font-size)
+}
+.small{
+    font-size:1rem;
 }
 
 .titulo{
@@ -282,10 +265,6 @@ img {
     margin-top: 3%;
 }
 
-.project {
-    width: 30%;
-}
-
 .wide {
     width: 100%
 }
@@ -296,6 +275,8 @@ img {
     flex-direction: row;
     align-items: center;
 }
+
+
 
 .midlaid {
     display: flex;
@@ -350,10 +331,37 @@ img {
     text-overflow: ellipsis;
     max-width: 50%;
 }
-/* #grad {
-    height: 100%;
-    width: 3rem;
-    background-color: red;
-    background-image: linear-gradient(to bottom right, red, yellow);
-    position: fixed;
-  } */
+
+.projetodesc{
+    font-size: 1.25rem;
+}
+.projectwidth{
+    width:20rem
+}
+.gap1{gap:1rem}
+.gap25{gap:0.25rem}
+
+.botaosaibamais{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+}
+.botaosaibamais:hover{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    background-color: var(--second-color);
+    color:var(--background-color)
+}
+.botaoaboutme{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    width:10rem
+}
+.botaoaboutme2{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    width:20rem
+}
