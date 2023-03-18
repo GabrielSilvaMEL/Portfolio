@@ -166,19 +166,47 @@ img {
     border-radius: 10px;
     border: 1px solid var(--second-color);
     padding: 10px;
-    background-color: var(--second-color);
+    background-color: var(--background-color) ;
     
 }
 .botaocontact:hover {
     color: var(--white-color);
-    border-color: var(--text-color);
-    background-color: var(--first-color);
+    
+    background-color: var(--second-color);
     cursor: default;
 }
 
 .navbarbutton{ 
     font-size: 1.3rem;
 }
+
+
+.botaosaibamais{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+}
+.botaosaibamais:hover{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    background-color: var(--second-color);
+    color:var(--background-color)
+}
+.botaoaboutme{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    width:10rem
+}
+.botaoaboutme2{
+    border:1px solid var(--second-color);
+    border-radius: 10px;
+    padding:0.7rem;
+    width:20rem
+}
+
+
 /* <!--======================== BOTAO ========================--> */
 
 .navbar {
@@ -341,27 +369,5 @@ img {
 .gap1{gap:1rem}
 .gap25{gap:0.25rem}
 
-.botaosaibamais{
-    border:1px solid var(--second-color);
-    border-radius: 10px;
-    padding:0.7rem;
-}
-.botaosaibamais:hover{
-    border:1px solid var(--second-color);
-    border-radius: 10px;
-    padding:0.7rem;
-    background-color: var(--second-color);
-    color:var(--background-color)
-}
-.botaoaboutme{
-    border:1px solid var(--second-color);
-    border-radius: 10px;
-    padding:0.7rem;
-    width:10rem
-}
-.botaoaboutme2{
-    border:1px solid var(--second-color);
-    border-radius: 10px;
-    padding:0.7rem;
-    width:20rem
-}
+
+
