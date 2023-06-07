@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
 
@@ -29,19 +29,21 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 
 <body class="canto">
     <!-- ======================== Botão back to top ========================-->
 
-    <a href="#header" class="botaotop uil uil-angle-up bold " style="font-size:4rem"></a>
+    <a href="#header" class="botaotop " style="font-size:4rem"><i class="fas fa-chevron-up"></i></a>
 
     <!-- ======================== /Botão back to top ========================-->
     <h2 class='backgroundcolor' id="header">A</h2>
 
-    <header >
+    <header>
 
         <div class="row gap1" style="align-content:flex-end; width:100%;">
             <a href="#about" class="navbarbutton bold">ABOUT</a>
@@ -57,18 +59,18 @@
     <div class="tela">
         <div class="grid mainback border">
 
-            <div style="margin-top:1rem"></div>
 
-            <h2 class="bold tituloprin"> <i class="uil uil-scroll-h text"></i> OLÁ,</h2>
-            <h2 class="bold tituloprin">EU SOU O GABRIEL SILVA</h2>
-            <p class="bold tituloprin">Estudante de Análise e Desenvolvimento de sistemas</p>
-            <div style="margin-top:3rem"></div>
-            <div class="mid">
-                <img src="img/corvo.png" style="width:8rem" />
+
+
+            <div class="apresentacao">
+                <h1>Gabriel Silva Alves</h1>
+                <p>Estudante de Análise e Desenvolvimento de sistemas</p>
+
             </div>
-            <div style="margin-top:3rem"></div>
+
+
             <div class="mid">
-                <a class="bold botaosaibamais" href="#about">SAIBA MAIS</a>
+                <a class="bold botaosaibamais" href="#about">Saiba mais</a>
                 <a class="uil uil-angle-down bold capital" href="#about"></a>
             </div>
         </div>
@@ -77,7 +79,7 @@
     <!-- ======================== /ME ========================-->
 
 
-    <h2 class='backgroundcolor' id="about">A</h2>
+    <h2 class='backgroundcolor' id="about">desça</h2>
 
     <!-- ======================== ABOUT ME ========================-->
     <div class="tela">
@@ -85,148 +87,151 @@
         <div class="grid">
 
 
-            <h2 class="bold tituloprin"><span class="text">ABOUT </span>ME</h2>
+            <h2 class="bold secondcolor"><span class="text">Sobre </span>Mim</h2>
+            <br>
+            <br>
+
+            <div class="flex10gap wide100 mid ">
+
+                <!-- Primeira COLUNA -->
+                <div style="justify-content:space-between;">
+
+                    <div class="col gap1">
+                        <div class="col gap25">
+                            <h3>Gabriel Silva Alves</h3>
+                            <p class="small">21 anos</p>
+
+                        </div>
+
+                        <div class="row gap25">
+                            <p class="green small ">Estagiando</p>
+                        </div>
 
 
-            <div class="vitrine wide mid mainback "">
+                        <div class="row gap25">
+                            <p class="secondcolor small">Inglês: </p>
+                            <p class=" small">Avançado</p>
+                        </div>
 
-                <div class=" bloco" style="justify-content:space-between;">
 
+
+                    </div>
+
+                </div>
+
+                <!-- Segunda COLUNA -->
                 <div class="col gap1">
-                    <p class="text ">Gabriel Silva Alves</p>
-                    <div class="row gap25">
-                        <p class="green small ">Estagiando</p>
-                    </div>
-                    <div class="row gap25">
-                        <p class="text small">20 </p>
-                        <p class="gray small">anos</p>
-                    </div>
-                    <div class="row gap25">
-                        <p class="text small">Espanhol: </p>
-                        <p class="gray small">Básico</p>
-                    </div>
-                    <div class="row gap25">
-                        <p class="text small">Inglês: </p>
-                        <p class="gray small">Avançado</p>
+
+                    <div class="row gap25 ">
+                        <img src="foto.jpg" style="height: 17rem; border-radius: 50%;" />
                     </div>
 
-                    <div class="row gap25">
-                        <p class="text small">Previsão de término de curso: </p>
-                        <p class="gray small"> Julho de 2023</p>
 
-                    </div>
-                    <div class="row gap25">
-                        <p class="text small">Ferramentas e Tecnologias: </p>
-                        <p class="gray small"> CSS, JavaScript, HTML, MySQL, PHP, Laravel (Vite e Blade),C# </p>
 
+                    <!-- Ferramentas -->
+                    <div class="row gap50 ">
+                        <i class="fab fa-php" title="PHP"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-css3" title="CSS 3"></i>
+                        <i class="fab fa-html5" title="HTML 5"></i>
+                        <i class="fab fa-laravel" title="Framework Laravel"></i>
                     </div>
+
                 </div>
 
-                <div class="mid" style="margin-bottom:1rem">
-                    <!-- Linkedin -->
-                    <a href="https://www.linkedin.com/in/gabrielsilvalves331/"
-                        class="uil uil-linkedin circleBase botaocontact type1 mid" target="_blank"></a>
+                <!-- Terceira COLUNA -->
+                <div class="col gap1">
 
-                    <!-- Github -->
-                    <a href="https://github.com/gabrielsilvamel"
-                        class="uil uil-github circleBase botaocontact type1 mid" target="_blank"></a>
-                    <a href="https://github.com/gabrielsilvamel"
-                        class="uil uil-instagram circleBase botaocontact type1 mid" target="_blank"></a>
-                    <a href="mailto: gabrielsilvaalves3000@outlook.com"
-                        class="uil uil-envelope circleBase botaocontact type1 mid" target="_blank"></a>
+
+                    <div class="col gap25 ">
+                        <center>
+                            <h4>Certificados</h4>
+                            <br>
+                            <h4 class="bold secondcolor">Cisco Networking Academy</h4>
+
+                            <p class="small">Certificado Gerenciamento e manutenção de computadores</p>
+                        </center>
+                    </div>
+                    <div class="col gap25">
+                        <h4 class="bold secondcolor">Inglês</h4>
+                        <p class="small">Certificado TOEIC - Nota <span class="bold">825</span></p>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div class="col gap1">
-                
-
-                
-                <div class="row gap25 botaoaboutme">
-                    <img src="img/fotopessoal.jpg" style="width:rem; height: 17rem;" />
-                </div>
-                <div class="row gap25 botaoaboutme">
-                    <h1>3</h1>
-                    <p class="small">projetos</p>
-                </div>
-                
-            </div>
-
-            <div class="col gap1">
-
-                <div style="margin-top:3rem"></div>
-                <div class="col gap25 botaoaboutme2">
-                    <h1 class="small">Cisco Networking Academy - Remoto</h1>
-                    <p class="small">
-                        <center>Gerenciamento e manutenção de computadores</center>
-                    </p>
-                </div>
-                <div class="col gap25 botaoaboutme2 ">
-                    <h1 class="small">Inglês</h1>
-                    <p class="small">Certificado TOEIC - nota 825</p>
-                </div>
-
-            </div>
-
+            <a class="uil uil-angle-down bold capital" href="#projects"></a>
         </div>
-        <a class="uil uil-angle-down bold capital" href="#projects"></a>
-    </div>
     </div>
     <!-- ======================== ABOUT ME ========================-->
 
     <h2 class='backgroundcolor' id="projects">A</h2>
-    
+
     <!-- ======================== PROJECTS ========================-->
     <div class="tela">
         <div class="grid wide">
-            <h2 class="bold text tituloprin" >PROJECTS</h2>
+            <h2 class="bold text tituloprin">PROJECTS</h2>
             <div style="margin-top:5rem"></div>
 
-            <!-- Vitrine -->
-            <div class="vitrine wide projectmid">
+
+            <!-- flex10gap -->
+            <div class="flex10gap wide projectmid">
 
                 <!-- Projeto 1 -->
                 <div class="projectwidth">
 
                     <img src="img/project1.png" width="100%" height="5rem" alt="My Image" />
                     <div class="row" style="gap:1rem; justify-content:flex-start">
-                        <h4 class="tituloprin">Aulas JS</h4>
-                        <i class="uil uil-html5 tituloprin"></i>
-                        <i class="uil uil-css3-simple tituloprin"></i>
-                        <i class="uil uil-react tituloprin"></i>
-                        <i class="uil uil-java-script tituloprin"></i>
+                        <h4 class="bold">JavaScript</h4>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-css3" title="CSS 3"></i>
+                        <i class="fab fa-html5" title="HTML 5"></i>
 
                     </div>
-                    <p class="projetodesc">Diferentes lógicas reunidas em um site desenvolvido inteiramente por mim</p>
+                    <p class="text small">Diferentes lógicas reunidas em um site desenvolvido inteiramente por mim</p>
 
                     <!-- Imagens -->
                     <div class="deitado">
-                        <div style="margin-top:1rem"></div>
-                        <a href="https://gabrielsilvamel.github.io/Aulas_JS/" class="bold tituloprin"
+                        <div style="margin-top:0.5rem"></div>
+                        
+                        <a href="https://gabrielsilvamel.github.io/Aulas_JS/" class="bold botaosaibamais mid"
                             target="_blank">Abrir</a>
+                        
                     </div>
 
                 </div>
-
                 <!-- Projeto 2 -->
                 <div class="projectwidth">
-                    <img src="img/projweb.png" width="100%" height="5rem" alt="My Image" style="vertical-align: top; float: left;  
-                margin: 0 30px 0 0; word-break: break-word;" />
-                    <h4 class="tituloprin">Projeto Web</h4>
-                    <p class="projetodesc">Site de venda de ingressos que conta com CRUDs, autenticação de admin e
-                        cliente,
-                        dashboard para gerenciamento do
-                        site </p>
-                    <div class="deitado">
-                        <div style="margin-top:1rem"></div>
-                        <a href="https://www.linkedin.com/posts/gabrielsilvalves331_javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop"
-                            class="bold tituloprin" target="_blank">Saiba mais</a>
+
+                    <img src="img/projweb.png" width="100%" height="5rem" alt="AstroShowsImage" />
+                    <div class="row" style="gap:1rem; justify-content:flex-start">
+                        <h4 class="bold">Astro Shows</h4>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-css3" title="CSS 3"></i>
+                        <i class="fab fa-html5" title="HTML 5"></i>
+
                     </div>
+                    <p class="text small">Site de vendas de ingressos para shows. Contém CRUDs para gerenciamento das
+                        tabelas e informações presentes no site e autenticação por login e senha.</p>
+
+                    <!-- Imagens -->
+                    <div class="deitado">
+                        <div style="margin-top:0.5rem"></div>
+                        
+                        <a href="https://www.linkedin.com/posts/gabrielsilvalves331_
+                        javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop"
+                         class="bold botaosaibamais mid" target="_blank">Abrir</a>
+                    </div>
+
                 </div>
+
+
+                
+                
 
                 <!-- Projeto 3 -->
                 <div class="projectwidth">
-                    <img src="img/portfolioprint.png"  alt="My Image" style="vertical-align: top; float: left;  
+                    <img src="img/portfolioprint.png" alt="My Image" style="vertical-align: top; float: left;  
                 margin: 0 30px 0 0; word-break: break-word;" />
                     <div class="row" style="gap:1rem; justify-content:flex-start">
                         <h4 class="tituloprin">Portfolio</h4>
@@ -240,7 +245,7 @@
                     <div class="deitado">
                         <div style="margin-top:1rem"></div>
 
-                        <a href=https://gabrielsilvamel.github.io/Portfolio/" class="bold tituloprin"
+                        <a href="https://gabrielsilvamel.github.io/Portfolio/" class="bold tituloprin"
                             target="_blank">Abrir</a>
                     </div>
                 </div>
