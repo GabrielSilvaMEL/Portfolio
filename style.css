@@ -253,11 +253,7 @@ img {
     height: var(--header-height);
 }
 
-.container {
-    max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-}
+
 
 .grid {
     display: grid;
@@ -280,9 +276,7 @@ img {
     flex-direction: column;
     align-items: center;
 }
-.tela{
-    height:35rem
-}
+
 .section {
     padding: 2rem 0 4rem;
 }
@@ -301,6 +295,7 @@ img {
     gap: 10px;
 }
 
+
 .top {
     margin-top: 3%;
 }
@@ -315,49 +310,22 @@ img {
     flex-direction: row;
     align-items: center;
 }
-
-.projectmid{
+.project-horizontal-line{
     display: flex;
+    gap: 10px;
     justify-content: center;
     flex-direction: row;
     align-items: flex-start;
 }
-.midlaid {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
-/* Centralizador de div */
-.canto {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 /* Fonte negrito */
 .bold {
     font-weight: bold;
 }
 
-/* Cursor default */
-.cursor {
-    cursor: default;
-}
 
-/* Círculo */
-.circleBase {
-    border-radius: 50%;
-    behavior: url(PIE.htc);
-    /* remove if you don't care about IE8 */
-}
 
-.type1 {
-    width: 50px;
-    height: 50px;
-}
-/* cor do texto */
 
 .botaotop {
     position: fixed;
@@ -378,13 +346,6 @@ img {
 .contatofixed a:hover{
     color: #6874E8
 }
-.spaceskip{
-    white-space:break-spaces;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 50%;
-}
-
 
 .projectwidth{
     width:20rem
@@ -397,24 +358,6 @@ img {
     text-shadow: 0.01rem 0.01rem 0.1rem var(--second-color);
     cursor: default;
 }
-
-.bloco{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 25rem;
-    border-radius: 3px;
-    padding-top: 3rem;
-    padding-left:1rem;
-    padding-right:1rem;
-
-}
-
-
-
-
 .apresentacao {
   width: 100%;
   height: 361px;
