@@ -24,8 +24,16 @@
 
 <body>
     <main>
+        <header>
+
+        </header>
         <section class="home">
             <div class="home-foto-contato">
+                <div class="global-row-header">
+                    <a class="global-titulo-paragrafo-text-color" href="#skills">SKILLS</a>
+                    <a class="global-titulo-paragrafo-text-color" href="#experience">EXPERIENCES</a>
+                    <a class="global-titulo-paragrafo-text-color" href="#projects">PROJECTS</a>
+                </div>
                 <img src="img/foto.jpg" class="home-fotopessoal img-fluid">
                 <div class="home-social">
                     <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn" class="fab fa-linkedin"
@@ -37,6 +45,7 @@
                     <a href="mailto: gabrielsilvaalves3000@outlook.com" title="Enviar Email" class="far fa-envelope"
                         target="_blank"></a>
                 </div>
+                
             </div>
 
             <div class="home-data">
@@ -44,9 +53,12 @@
                 <h2>DESENVOLVEDOR FULL-STACK</h2>
                 <p>Iniciando carreira como desenvolvedor</p>
             </div>
+            <div class="home-botao-more">
+                <a href="#skills">Saiba mais <i class="fas fa-arrow-right" style="font-size: 1rem;"></i></a>
+            </div>
         </section>
 
-        <section class="experience">
+        <section class="experience" id="skills">
             <div class="global-titulo">
                 <h1>Habilidades</h1>
                 <h4>HABILIDADES DESENVOLVIDAS</h4>
@@ -54,61 +66,79 @@
             <div class="experience-wrapper">
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>Nivel de Inglês</h1>
-                        <p>Certificado TOEIC</p>
-                        
-                        <p class="experience-duracao">Nota: 825</p>
+                        <i class="fas fa-globe-americas"></i>
+                        <p class="experience-descricao">Certificado Toeic - Inglês</p>
+                        <p class="experience-footer">Nota: 825</p>
                     </div>
                 </div>
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>Cisco Networking Academy</h1>
-                        <p>CertificadoGerenciamento e manutenção de computadores</p>
-                        <p class="experience-duracao">Remoto</p>
+                        <i class="fas fa-globe-americas"></i>
+                        <p class="experience-descricao">Cisco Networking Academy</p>
+                        <p class="experience-footer">Remoto</p>
                     </div>
                 </div>
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>Escola Happy</h1>
-                        <p>Ministrei aulas na Escola de Programação Happy</p>
-                        <p class="experience-duracao">3 Meses</p>
+                        <i class="fas fa-code"></i>
+                        <p class="experience-descricao">Linguagens e Ferramentas</p>
+                        <div class="experience-languages">
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                            <i class="fab fa-css3" title="CSS 3"></i>
+                            <i class="fab fa-html5" title="HTML 5"></i>
+                            <i class="fab fa-laravel" title="Framework Laravel"></i>
+                            <i class="fas fa-server" title="MySQL e SQLServer"></i>
+                        </div>
+                    
                     </div>
                 </div>
+
             </div>
         </section>
-        
-        <section class="experience">
+
+        <section class="experience" id="experience">
             <div class="global-titulo">
                 <h1>Experiências</h1>
                 <h4>EXPERIÊNCIAS PASSADAS</h4>
+                <p>Tenho experiência em várias áreas da tecnologia e atualmente estou estagiando. </p>
             </div>
             <div class="experience-wrapper">
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>Empresa Junior Fatec</h1>
-                        <p>Experiência com manutenção e programação de arduínos.</p>
-                        <p class="experience-duracao">60 Horas</p>
+                        <i class="fas fa-robot"></i>
+                        <p class="experience-descricao">Estágio robótica</p>
+                        <p class="global-text-gray">Arduínos</p>
+                        <p class="experience-footer">60 Horas</p>
                     </div>
                 </div>
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>IT6 -Tecnologia</h1>
-                        <p>Desenvolvendo e aprendendo tanto o back-end quando o front na Secretaria da Saúde de
-                            Presidente
-                            Prudente</p>
-                        <p class="experience-duracao">3 Meses</p>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <p class="experience-descricao">Professor de programação de jogos</p>
+                        <p class="global-text-gray">Escola HAPPY</p>
+                        <p class="experience-footer">3 Meses</p>
                     </div>
                 </div>
                 <div class="experience-container">
                     <div class="experience-card">
-                        <h1>Escola Happy</h1>
-                        <p>Ministrei aulas na Escola de Programação Happy</p>
-                        <p class="experience-duracao">3 Meses</p>
+                        <i class="fas fa-code"></i>
+                        <p class="experience-descricao">Programador Front-end</p>
+                        <p class="global-text-gray">PHP, Laravel, HTML, CSS</p>
+                        <p class="experience-footer">Autônomo</p>
+                    </div>
+                </div>
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <i class="fas fa-code"></i>
+                        <p class="experience-descricao">Estágio Full-Stack</p>
+                        <p class="global-text-gray">ASP, ASP.NET, CSS, HTML</p>
+                        <p class="experience-footer">Até o presente momento</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="global-titulo">
                 <h1>Projetos</h1>
                 <h4>MEUS PROJETOS</h4>
@@ -117,14 +147,18 @@
 
                 <div class="projects-container">
                     <img src="img/darkwood.png" alt="">
-                    <h1>DARKWOOD</h1>
+                    <div class="global-row">
+                        <h1>DARKWOOD</h1>
+                        <div class="projects-languages">
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                            <i class="fab fa-css3 " title="CSS 3"></i>
+                            <i class="fab fa-html5 " title="HTML 5"></i>
+                        </div>
+                    </div>
+
                     <p>Meu jogo favorito apresentado por um design desenvolvido por mim</p>
 
-                    <div class="projects-languages">
-                        <i class="fab fa-js-square" title="JavaScript"></i>
-                        <i class="fab fa-css3 " title="CSS 3"></i>
-                        <i class="fab fa-html5 " title="HTML 5"></i>
-                    </div>
+
                     <div class="projects-button-container">
                         <a href="https://darkwood.vercel.app" target="_blank">Demo <i
                                 class="fas fa-arrow-right"></i></a>
@@ -132,15 +166,19 @@
                 </div>
                 <div class="projects-container">
                     <img src="img/project1.png" alt="">
-                    <h1>JAVASCRIPT</h1>
+                    <div class="global-row">
+                        <h1>JAVASCRIPT</h1>
+                        <div class="projects-languages">
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                            <i class="fab fa-css3 " title="CSS 3"></i>
+                            <i class="fab fa-html5 " title="HTML 5"></i>
+                        </div>
+                    </div>
+
                     <p>Diferentes lógicas de JavaScript reunidas em um site desenvolvido
                         inteiramente por mim</p>
 
-                    <div class="projects-languages">
-                        <i class="fab fa-js-square" title="JavaScript"></i>
-                        <i class="fab fa-css3 " title="CSS 3"></i>
-                        <i class="fab fa-html5 " title="HTML 5"></i>
-                    </div>
+
                     <div class="projects-button-container">
                         <a href="https://gabrielsilvamel.github.io/Aulas_JS/" target="_blank">Demo <i
                                 class="fas fa-arrow-right"></i></a>
@@ -148,17 +186,21 @@
                 </div>
                 <div class="projects-container">
                     <img src="img/kalderblog.png" alt="">
-                    <h1>KALDER BLOG</h1>
+                    <div class="global-row">
+                        <h1>KALDER BLOG</h1>
+                        <div class="projects-languages">
+                            <i class="fab fa-php ms-lg-2" title="PHP"></i>
+                            <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
+                            <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
+                            <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
+                            <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
+                            <i class="fas fa-server" title="MySQL e SQLServer"></i>
+                        </div>
+                    </div>
+
                     <p>Blog sobre a indústria musical</p>
 
-                    <div class="projects-languages">
-                        <i class="fab fa-php ms-lg-2" title="PHP"></i>
-                        <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
-                        <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
-                        <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
-                        <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
-                        <i class="fas fa-server" title="MySQL e SQLServer"></i>
-                    </div>
+
                     <div class="projects-button-container">
                         <a href="https://github.com/GabrielSilvaMEL/Kalder" target="_blank">
                             Saiba mais <i class="fas fa-arrow-right"></i></a>
@@ -166,17 +208,21 @@
                 </div>
                 <div class="projects-container">
                     <img src="img/projweb.png" alt="">
-                    <h1>ASTROSHOWS</h1>
+                    <div class="global-row">
+                        <h1>ASTRO SHOWS</h1>
+                        <div class="projects-languages">
+                            <i class="fab fa-php ms-lg-2" title="PHP"></i>
+                            <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
+                            <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
+                            <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
+                            <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
+                            <i class="fas fa-server" title="MySQL e SQLServer"></i>
+                        </div>
+                    </div>
+
                     <p>Site para venda de ingressos, possui autentição de usuário e banco de dados</p>
 
-                    <div class="projects-languages">
-                        <i class="fab fa-php ms-lg-2" title="PHP"></i>
-                        <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
-                        <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
-                        <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
-                        <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
-                        <i class="fas fa-server" title="MySQL e SQLServer"></i>
-                    </div>
+
                     <div class="projects-button-container">
                         <a href="https://github.com/guilherm-hsbe/Projeto-AstroShows" target="_blank">
                             Saiba mais <i class="fas fa-arrow-right"></i></a>
