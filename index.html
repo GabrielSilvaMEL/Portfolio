@@ -1,282 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-
+    <title>Portfolio novo</title>
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- /FONTES -->
-
-    <!-- CSS -->
+    <!-- Estilo -->
     <link rel="stylesheet" href="style.css">
-
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
+<body>
+    <main>
+        <section class="home">
+            <div class="home-foto-contato">
+                <img src="img/foto.jpg" class="home-fotopessoal img-fluid">
+                <div class="home-social">
+                    <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn" class="fab fa-linkedin"
+                        target="_blank"></a>
+                    <a href="https://github.com/gabrielsilvamel" title="Github" class="fab fa-github"
+                        target="_blank"></a>
+                    <a href="https://instagram.com/gabaallves" title="Instagram" class="fab fa-instagram"
+                        target="_blank"></a>
+                    <a href="mailto: gabrielsilvaalves3000@outlook.com" title="Enviar Email" class="far fa-envelope"
+                        target="_blank"></a>
+                </div>
+            </div>
 
-<body class="centralizar">
-    <!-- ======================== Botão back to top  FIXED========================-->
-    <a href="#header" class="botaotop " style="font-size:3rem"><i class="fas fa-chevron-up"></i></a>
-    <!-- ======================== /Botão back to top ========================-->
+            <div class="home-data">
+                <h1>Olá, eu sou o Gabriel 👋</h1>
+                <h2>DESENVOLVEDOR FULL-STACK</h2>
+                <p>Iniciando carreira como desenvolvedor</p>
+            </div>
+        </section>
 
-    <!-- ======================== Contato Flutuante FIXED========================-->
-    <div class="contatofixed">
-
-        <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn" class="fab fa-linkedin"
-            style="font-size:2rem" target="_blank"></a>
-        <a href="https://github.com/gabrielsilvamel" title="Github" class="fab fa-github" style="font-size:2rem"
-            target="_blank"></a>
-        <a href="https://instagram.com/gabaallves" title="Instagram" class="fab fa-instagram" style="font-size:2rem"
-            target="_blank"></a>
-        <a href="mailto: gabrielsilvaalves3000@outlook.com" title="Enviar Email" class="far fa-envelope"
-            style="font-size:2rem" target="_blank"></a>
-
-    </div><!-- ======================== /Contato Flutuante ========================-->
-
-
-    <h2 class='backgroundcolor' id="header">A</h2>
-
-    <header>
-
-        <div class="row gap1" style="align-content:flex-end; width:100%;">
-            <a href="#about" class="navbarbutton bold">ABOUT</a>
-            <a href="#projects" class="navbarbutton bold">PROJECTS</a>
-            <a href="#contact" class="navbarbutton bold">CONTACT</a>
-        </div>
-
-    </header>
-
-    <!-- ======================== ME ========================-->
-
-    <div class="grid mainback border">
-
-        <div class="apresentacao">
-            <h1>Gabriel Silva Alves</h1>
-            <p>Estudante de Análise e Desenvolvimento de sistemas</p>
-        </div>
-        <div class="mid">
-            <a class="bold botaosaibamais" href="#about">Saiba mais</a>
-            <a class="uil uil-angle-down bold capital" href="#about"></a>
-        </div>
-    </div>
-
-    <br>
-    <!-- ======================== /ME ========================-->
-
-
-    <h2 class='backgroundcolor' id="about">desça</h2>
-
-    <!-- ======================== ABOUT ME ========================-->
-
-
-    <div class="grid">
-        <h2 class="bold secondcolor"><span class="text">Sobre </span>Mim</h2>
-        <br>
-        <br>
-        <div class="project-horizontal-line wide100">
-
-            <!-- Primeira COLUNA -->
-            <div style="justify-content:space-between;">
-
-                <div class="col gap1">
-                    <div class="col gap25">
-
-                        <h3 class="secondcolor">Gabriel Silva Alves</h3>
-                        <p class="small"><i class="far fa-address-card"></i> 21 anos</p>
+        <section class="experience">
+            <div class="global-titulo">
+                <h1>Habilidades</h1>
+                <h4>HABILIDADES DESENVOLVIDAS</h4>
+            </div>
+            <div class="experience-wrapper">
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>Nivel de Inglês</h1>
+                        <p>Certificado TOEIC</p>
+                        
+                        <p class="experience-duracao">Nota: 825</p>
                     </div>
-                    <div class="row gap25">
-
-                        <p class=" small">Estudante da Fatec de Presidente Prudente</p>
+                </div>
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>Cisco Networking Academy</h1>
+                        <p>CertificadoGerenciamento e manutenção de computadores</p>
+                        <p class="experience-duracao">Remoto</p>
                     </div>
-                    <p class=" small">Formação em Jun 2023</p>
-                    <i class="fas fa-crow"></i>
-                    <div class="row gap25">
-                        <p class="green ">Estagiando</p>
+                </div>
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>Escola Happy</h1>
+                        <p>Ministrei aulas na Escola de Programação Happy</p>
+                        <p class="experience-duracao">3 Meses</p>
                     </div>
-
-                    <div class="row gap25">
-                        <p class="secondcolor small">Inglês: </p>
-                        <p class=" small">Avançado</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="experience">
+            <div class="global-titulo">
+                <h1>Experiências</h1>
+                <h4>EXPERIÊNCIAS PASSADAS</h4>
+            </div>
+            <div class="experience-wrapper">
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>Empresa Junior Fatec</h1>
+                        <p>Experiência com manutenção e programação de arduínos.</p>
+                        <p class="experience-duracao">60 Horas</p>
                     </div>
-
                 </div>
-
-            </div>
-
-            <!-- Segunda COLUNA -->
-            <div class="col gap1">
-
-                <div class="row gap25 ">
-                    <img src="foto.jpg" style="height: 17rem; border-radius: 50%;" />
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>IT6 -Tecnologia</h1>
+                        <p>Desenvolvendo e aprendendo tanto o back-end quando o front na Secretaria da Saúde de
+                            Presidente
+                            Prudente</p>
+                        <p class="experience-duracao">3 Meses</p>
+                    </div>
                 </div>
-
-                <!-- Ferramentas -->
-                <div class="row gap50 ">
-                    <i class="fab fa-php" title="PHP"></i>
-                    <i class="fab fa-js-square" title="JavaScript"></i>
-                    <i class="fab fa-css3" title="CSS 3"></i>
-                    <i class="fab fa-html5" title="HTML 5"></i>
-                    <i class="fab fa-laravel" title="Framework Laravel"></i>
-                    <i class="fas fa-server" title="MySQL e SQLServer"></i>
-                </div>
-
-            </div>
-
-            <!-- Terceira COLUNA -->
-            <div class="col gap1">
-
-
-                <div class="col gap25 ">
-                    <center>
-                        <h4><i class="far fa-bookmark"></i> Certificados</h4>
-                        <br>
-                        <h4 class="bold secondcolor">Cisco Networking Academy</h4>
-
-                        <p class="small">Gerenciamento e manutenção de computadores</p>
-                    </center>
-                </div>
-                <div class="col gap25">
-                    <h4 class="bold secondcolor">Inglês</h4>
-                    <p class="small">Certificado TOEIC - Nota <span class="bold">825</span></p>
-                </div>
-
-            </div>
-
-        </div>
-        <a class="uil uil-angle-down bold capital" href="#projects"></a>
-    </div>
-
-    <!-- ======================== ABOUT ME ========================-->
-
-    <h2 class='backgroundcolor' id="projects">A</h2>
-
-    <!-- ======================== PROJECTS ========================-->
-
-    <div class="grid">
-        <h2 class="bold text tituloprin">Meus <span class="secondcolor">Projetos</span></h2>
-        <div style="margin-top:5rem"></div>
-
-       
-        <div class="project-horizontal-line">
-
-            <!-- Projeto 1 -->
-            <div class="projectwidth">
-
-                <img src="img/project1.png" width="100%" height="5rem" alt="My Image" />
-                <div class="row" style="gap:1rem; justify-content:flex-start">
-                    <h4 class="bold">JavaScript</h4>
-                    <i class="fab fa-js-square" title="JavaScript"></i>
-                    <i class="fab fa-css3" title="CSS 3"></i>
-                    <i class="fab fa-html5" title="HTML 5"></i>
-                </div>
-
-                <p class="text small">Diferentes lógicas reunidas em um site desenvolvido inteiramente por mim</p>
-
-                <!-- Imagens -->
-                <div class="deitado">
-                    <div style="margin-top:0.5rem"></div>
-
-                    <a href="https://gabrielsilvamel.github.io/Aulas_JS/" class="bold botaosaibamais mid"
-                        target="_blank">Abrir</a>
-
-                </div>
-
-            </div>
-            <!-- Projeto 2 -->
-            <div class="projectwidth">
-
-                <img src="img/projweb.png" width="100%" height="5rem" alt="AstroShowsImage" />
-                <div class="row" style="gap:0.5rem; justify-content:flex-start">
-                    <h4 class="bold">Astro Shows</h4>
-                    <i class="fab fa-php" title="PHP"></i>
-                    <i class="fab fa-js-square" title="JavaScript"></i>
-                    <i class="fab fa-css3" title="CSS 3"></i>
-                    <i class="fab fa-html5" title="HTML 5"></i>
-                    <i class="fab fa-laravel" title="Framework Laravel"></i>
-                </div>
-                <p class="text small">Site de vendas de ingressos para shows. Contém CRUDs para gerenciamento das
-                    tabelas e informações presentes no site e autenticação por login e senha.</p>
-
-                <!-- Imagens -->
-                <div class="deitado">
-                    <div style="margin-top:0.5rem"></div>
-
-                    <a href="https://www.linkedin.com/posts/gabrielsilvalves331_
-                        javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop"
-                        class="bold botaosaibamais mid" target="_blank">Saiba mais</a>
-                </div>
-
-            </div>
-
-            <!-- Projeto 3 -->
-            <div class="projectwidth">
-
-                <img src="img/darkwoodprint.png" width="100%" height="5rem" alt="Em progresso" />
-                <div class="row" style="gap:0.5rem; justify-content:flex-start">
-                    <h4 class="bold">Darkwood</h4>
-                    <i class="fab fa-js-square" title="JavaScript"></i>
-                    <i class="fab fa-css3" title="CSS 3"></i>
-                    <i class="fab fa-html5" title="HTML 5"></i>
-                </div>
-
-                <p class="text small">Projeto que mostra um pouco do meu jogo favorito</p>
-
-                <!-- Imagens -->
-                <div class="deitado">
-                    <div style="margin-top:0.5rem"></div>
-
-                    <a href="https://darkwood.vercel.app/" class="bold botaosaibamais mid" target="_blank">Abrir</a>
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <h1>Escola Happy</h1>
+                        <p>Ministrei aulas na Escola de Programação Happy</p>
+                        <p class="experience-duracao">3 Meses</p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="projects">
+            <div class="global-titulo">
+                <h1>Projetos</h1>
+                <h4>MEUS PROJETOS</h4>
+            </div>
+            <div class="projects-wrap">
 
-        </div>
+                <div class="projects-container">
+                    <img src="img/darkwood.png" alt="">
+                    <h1>DARKWOOD</h1>
+                    <p>Meu jogo favorito apresentado por um design desenvolvido por mim</p>
 
-
-        <!-- =======================================NOVA LINHA================================================ -->
-            <div class="project-horizontal-line">
-                <!-- Projeto  4-->
-                <div class="projectwidth">
-
-                    <img src="" width="100%" height="5rem" alt="Em progresso" />
-                    <div class="row" style="gap:0.5rem; justify-content:flex-start">
-                        <h4 class="bold">Kalder Blog</h4>
-                        <i class="fab fa-php" title="PHP"></i>
+                    <div class="projects-languages">
                         <i class="fab fa-js-square" title="JavaScript"></i>
-                        <i class="fab fa-css3" title="CSS 3"></i>
-                        <i class="fab fa-html5" title="HTML 5"></i>
-                        <i class="fab fa-laravel" title="Framework Laravel"></i>
+                        <i class="fab fa-css3 " title="CSS 3"></i>
+                        <i class="fab fa-html5 " title="HTML 5"></i>
                     </div>
-
-                    <p class="text small">Blog em desenvolvimento</p>
-
-                    <!-- Imagens -->
-                    <div class="deitado">
-                        <div style="margin-top:0.5rem"></div>
-
-                        <a href="https://www.linkedin.com/in/gabrielsilvalves331/" class="bold botaosaibamais mid"
-                            target="_blank">Saiba mais</a>
+                    <div class="projects-button-container">
+                        <a href="https://darkwood.vercel.app" target="_blank">Demo <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                
+                <div class="projects-container">
+                    <img src="img/project1.png" alt="">
+                    <h1>JAVASCRIPT</h1>
+                    <p>Diferentes lógicas de JavaScript reunidas em um site desenvolvido
+                        inteiramente por mim</p>
+
+                    <div class="projects-languages">
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-css3 " title="CSS 3"></i>
+                        <i class="fab fa-html5 " title="HTML 5"></i>
+                    </div>
+                    <div class="projects-button-container">
+                        <a href="https://gabrielsilvamel.github.io/Aulas_JS/" target="_blank">Demo <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <img src="img/kalderblog.png" alt="">
+                    <h1>KALDER BLOG</h1>
+                    <p>Blog sobre a indústria musical</p>
+
+                    <div class="projects-languages">
+                        <i class="fab fa-php ms-lg-2" title="PHP"></i>
+                        <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
+                        <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
+                        <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
+                        <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
+                        <i class="fas fa-server" title="MySQL e SQLServer"></i>
+                    </div>
+                    <div class="projects-button-container">
+                        <a href="https://github.com/GabrielSilvaMEL/Kalder" target="_blank">
+                            Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <img src="img/projweb.png" alt="">
+                    <h1>ASTROSHOWS</h1>
+                    <p>Site para venda de ingressos, possui autentição de usuário e banco de dados</p>
+
+                    <div class="projects-languages">
+                        <i class="fab fa-php ms-lg-2" title="PHP"></i>
+                        <i class="fab fa-js-square ms-lg-2" title="JavaScript"></i>
+                        <i class="fab fa-css3 ms-lg-2" title="CSS 3"></i>
+                        <i class="fab fa-html5 ms-lg-2" title="HTML 5"></i>
+                        <i class="fab fa-laravel ms-lg-2" title="Framework Laravel"></i>
+                        <i class="fas fa-server" title="MySQL e SQLServer"></i>
+                    </div>
+                    <div class="projects-button-container">
+                        <a href="https://github.com/guilherm-hsbe/Projeto-AstroShows" target="_blank">
+                            Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
             </div>
-        <!-- =======================================/NOVA LINHA================================================ -->
-
-    </div>
 
 
-
-
+        </section>
+    </main>
 </body>
 
 </html>
