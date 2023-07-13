@@ -294,6 +294,9 @@ main {
         padding: .5rem;
         
     }
+    .experience-container{
+    flex: 0 1 500px;
+    }
     .experience{
     height: auto;
     margin: 1rem;
@@ -340,6 +343,9 @@ main {
 @media (max-width:1024px) {
     .projects-container img{
         width: 80vw;
+    }
+    .experience-container{
+    flex: 0 1 80vw;
     }
 }
 @media (min-width:1024px) {
