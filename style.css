@@ -119,15 +119,13 @@ h4 {
 
 .contato {
     height: 100vh;
-    position: fixed;
-    right: 5%;
-    top: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
     z-index: 10;
+    max-height: 16px;
     gap: 16px;
     transition: 0.2s ease-in;
 }
@@ -135,14 +133,14 @@ h4 {
 .contato a {
     font-size: 2rem;
     text-decoration: none;
-    color: var(--first-color);
+    color: white;
     transition: 0.2s ease-in;
 }
 
 .contato a:hover {
     font-size: 2.2rem;
     mix-blend-mode: difference;
-
+    color: var(--first-color);
 }
 
 .sidebar {
@@ -238,16 +236,15 @@ h4 {
     top: 15%;
     right: 5%;
     color: white;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference !important;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    cursor: default;
-    z-index: 10;
-    transition: 0.3s ease-in;
+    z-index: 100;
+   
 }
 
 .idade h2 {
@@ -462,6 +459,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: 3rem;
+    padding: 32px 0;
     gap: 32px;
 
 }
@@ -473,7 +471,7 @@ h4 {
         flex-direction: column;
         max-width: 15vw;
         text-align: center;
-        height: 10rem;
+        
         padding-bottom: 20px;
         border-bottom: 2px solid var(--first-color);
 }
@@ -521,7 +519,9 @@ h4 {
         justify-content: center;
         align-items: center;
     }
-
+    .corvo{
+        display: none;
+    }
 }
 
 @media (max-width:1024px) {
@@ -530,6 +530,7 @@ h4 {
         top: 5%;
         right: 2%;
         gap: 16px;
+        
     }
 
     .idade h2 {
@@ -554,11 +555,6 @@ h4 {
     .orientation a {
         text-decoration: none;
         color: black
-    }
-
-    .contato {
-        right: 1%;
-
     }
 
     .home-menu {
