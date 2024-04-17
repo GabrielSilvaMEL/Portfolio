@@ -1,9 +1,9 @@
 :root {
     --hue-color: 149;
 
-    --first-color: #575342;
-    --second-color: #d8d4c6;
-    --accent-color: #B2AD99;
+    --first-color: #952baf;
+    --second-color: #e2d4e7;
+    --accent-color: #d1cbdb;
     --gray-color: #373737;
     --text-family: 'Poppins', sans-serif;
     --text-color: black;
@@ -20,7 +20,7 @@
 body.dark-theme {
     --first-color: var(--accent-color);
     --second-color: #2C2F3A;
-    --accent-color: #B2AD99;
+    --accent-color: #db98ee;
     --gray-color: white;
     --text-family: 'Poppins', sans-serif;
     --text-color: white;
