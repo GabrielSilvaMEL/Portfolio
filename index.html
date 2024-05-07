@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Gabriel Silva</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/corvo.png">
-    <!-- FONTES -->
+
+
+   <!--  masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">    
+        
+    <!-- JS Boostrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Estilo -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- ICONS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
-
 <body>
-    <!-- /* ================================ Navbar ================================*/ -->
-    <nav>
-        <p>Gabriel</p>
-        <div class="row gap-16">
-            <a href="#home"><i class="fa fa-home"></i>Home</a>
-
-            <a href="#experiences"><i class="far fa-hourglass"></i>Experiences</a>
-            <a href="#certificados"><i class="fas fa-certificate"></i>Certificados</a>
-            <a href="#projects"><i class="fas fa-wrench"></i>Projects</a>
-            <i class="far fa-moon class theme-button" id="theme-button"></i>
+    <nav class="fixed-top shadow">
+        <div class="d-flex align-items-center text-center justify-content-around">
+            <a>Gabriel</a>
+            <div class="row">
+                <a class="col-auto" href="#home">Home</a>
+                <a class="col-auto" href="#certificados">Certificados</a>
+                <a class="col-auto" href="#exp">Experiences</a>
+                <a class="col-auto" href="#projects">Projetos</a>
+                <i class="col-auto far fa-moon class theme-button" id="theme-button"></i>
+            </div>
         </div>
     </nav>
-
-    <!-- /* ================================ Home ================================*/ -->
-
-    <section id="home" class="section-100">
-
+    <section id="home" class="section-100 d-flex justify-content-center section-background">
         <div class="home-container">
-            <div class="home-content">
+            <div class="home-content d-flex flex-column g-1">
                 <h1>Gabriel Silva Alves</h1>
-
-                <h3 class="color-first">Desenvolvedor Web</h3>
+                <h5 class="bold">Desenvolvedor Web</h5>
                 <p>Entregando um trabalho de qualidade a mais de 1 ano </p>
-                <p class="color-gray">
-                    Trabalhando na Vigilância Sanitária de Presidente Prudente
-                </p>
-                <div id="contato" class="row">
+             
+                <div id="contato" class="d-flex " style="gap:5px" >
                     <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn"
                         class="fab fa-linkedin-in" target="_blank"></a>
                     <a href="https://github.com/gabrielsilvamel" title="Github" class="fab fa-github"
@@ -59,174 +60,180 @@
                     <a href="mailto: gabrielsilvaalves3000@outlook.com" title="Enviar Email" class="far fa-envelope"
                         target="_blank"></a>
                 </div>
-                 <div class="row">
-                    <div  style="margin:0 !important">
-                    <a href="curriculo/Curriculo.pdf" download="Curriculo.pdf" title="Baixar Currículo"
-                        target="_blank"><p class="color-first"><i class="fas fa-paperclip"></i>Baixar currículo</p></a></div>
+                <div class="row">
+                    <div  style="margin:0 !important;padding:0">
+                    <a href="curriculo/Curriculo.pdf" download="Curriculo.pdf" title="Baixar Currículo" class="btn btn-second" 
+                        target="_blank"><p><i class="fas fa-paperclip" style="margin-right:8px"></i>Baixar currículo</p></a></div>
                 </div>
             </div>
-            <img class="home-img" src="img/foto.jpeg" alt="">
+            <img class="home-img shadow2" src="img/foto.jpeg" alt="">
             <div class="scroll">
-                <p>Scroll down</p> <i class="fas fa-angle-double-down"></i>
-            </div>
-            <!-- 
-            <p class="sub-titulo color-first">Desenvolvedor Full-Stack</p>
-            <p class="color-gray">Construindo carreira como Web Designer</p>
-            <br> -->
-        </div>
-    </section>
-
-    <!-- /* ================================ Experiences ================================*/ -->
-    <section id="experiences">
-        <p class="global-section-title">
-            Experiências
-        </p>
-        <div class="exp-container">
-            <div class="exp-card">
-                <i class="fas fa-graduation-cap color-first"></i>
-                <p>Formado</p>
-                <p class="color-gray">Análise e desenvolvimento de sistemas</p>
-                <p class="color-first">Ago/2023</p>
-            </div>
-            <div class="exp-card">
-                <i class="fas fa-briefcase color-first"></i>
-                <p>Estágio temporário</p>
-                <p class="color-gray">Manutenção e programação de arduínos</p>
-                <p class="color-first">2 semanas</p>
-            </div>
-            <div class="exp-card">
-                <i class="fas fa-briefcase color-first"></i>
-                <p>Estágio</p>
-                <p class="color-gray">Professor de programação de jogos na escola HAPPY</p>
-                <p class="color-first">3 meses</p>
-            </div>
-            <div class="exp-card">
-                <i class="fas fa-briefcase color-first"></i>
-                <p>Desenvolvedor Web</p>
-                <p class="color-gray">Desenvolvedor Web na secretaria Municipal de Saúde de Presidente Prudente
-                </p>
-                <p class="color-first">Abr/2023 - Atualmente</p>
+                <p class="text-white">Scroll down</p> <i class="fas fa-angle-double-down"></i>
             </div>
         </div>
     </section>
-    <!-- /* ================================ Certificados ================================*/ -->
-    <section id="certificados">
-        <p class="global-section-title">
-            Certificados
-        </p>
-        <div class="certificados-container">
-            <div class="certificados-container-2 ">
-                <div class="item item2 back-black shadow">
-                    <p class="color-white">Fluig - Desenvolvimento de processos BPM/ECM Advanced</p>
-                    <p class="color-white"> 01 hora e 40 minutos</p>
-                    <a class="color-white btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274448159739904-QdHJ?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-                <div class="item item1 back-white shadow">
-                    <p class>Fluig Express</p>
-                    <p> 15 minutos</p>
-                    <a class="color-black btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_gostaria-de-compartilhar-minha-pontua%C3%A7%C3%A3o-activity-7099858525459230720-9U1H?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-                <div class="item item4 back-accent shadow"
-                    style="display: flex;flex-direction: column;justify-content: center !important;">
-                    <p class="color-black"> Teste de Inglês Respeitado Internacionalmente - TOEIC</p>
-                    <p class="color-black">Nota 860</p>
-                    <a class="color-black btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_gostaria-de-compartilhar-minha-pontua%C3%A7%C3%A3o-activity-7099858525459230720-9U1H?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-                <div class="item item2 back-white shadow">
-                    <p>Desenvolvimento de Portais com WCM</p>
-                    <p>3 horas e 10 minutos</p>
-                    <a class="color-black btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274000367468544-ih4W?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-                <div class="item item2 back-accent shadow">
-                    <p class="color-black">Fluig - WCM - Gestão de portais </p>
-                    <p class="color-black"> 1 hora</p>
-
-                    <a class="color-black btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-wcm-gest%C3%A3o-activity-7117274801831866368-EwUB?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-                <div class="item item2 back-black shadow">
-                    <p class="color-white">Desenvolvimento de Portais com WCM</p>
-                    <p class="color-white">3 horas e 10 minutos</p>
-                    <a class="color-white btVerCertificado"
-                        href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274000367468544-ih4W?utm_source=share&utm_medium=member_desktop"
-                        target="_blank">Ver
-                        Certificado</a>
-                </div>
-            </div>
+    <section id="linguagens" class="container">
+        <p class="color-gray text-center mb-3">Linguagens e ferramentas que utilizo</p>
+        <div class="col-auto text-center d-flex flex-row justify-content-center align-items-center gap-12">
+            <i class="fab fa-php" title="PHP"></i>
+            <i class="fab fa-laravel" title="Laravel"></i>
+            <i class="devicon-csharp-plain" title="C#"></i>
+            <i class="devicon-azuresqldatabase-plain" title="SQL Server, MYSQL"></i>
+            <h5 class="col-auto mb-0" style="font-weight: 600;">ASP.NET</h5>
         </div>
     </section>
-    <!-- /* ================================ Projects ================================*/ -->
-    <section id="projects">
-        <p class="global-section-title">
-            Projetos
-        </p>
-        <div class="projects-imagens-container">
-            <div class="projects-row" style="gap:20px; align-items: start;">
-                <div id="imagemDestaque" class="projects-imagem-destaque"></div>
-                <div class="project-details">
-                    <h1>AstroShows</h1>
-                    <h2>Plataforma de venda de ingressos</h2>
-                    <p>Escolha um projeto abaixo</p>
-                    <h3></h3>
-                    <a class="projects-link color-first" href="https://www.linkedin.com/posts/gabrielsilvalves331_javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-external-link-alt"></i> Ver <span class="color-first">AstroShows</span></a>
-
-
+    <p class="text-center color-gray">Clique no certificado para abri-lo</p>
+    <section id="certificados" class="d-flex gap-16 justify-content-center container">
+        <div class="card fluig-card">
+            <div class="card-body">
+                <h3>TOTVS FLUIG</h3>
+                <hr>
+                <p>Solução de automatização de tarefas e workflows completa</p>
+                <li><a target="_blank" href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274448159739904-QdHJ?utm_source=share&utm_medium=member_desktop">Desenvolvimento de processos BPM/ECM Advanced</a></li>
+                <li><a target="_blank"href="https://www.linkedin.com/posts/gabrielsilvalves331_gostaria-de-compartilhar-minha-pontua%C3%A7%C3%A3o-activity-7099858525459230720-9U1H?utm_source=share&utm_medium=member_desktop">
+                    Fluig Express</a></li>
+                <li><a target="_blank"href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-wcm-gest%C3%A3o-activity-7117274801831866368-EwUB?utm_source=share&utm_medium=member_desktop">
+                    WCM - Gestão de portais</a></li>
+                <li><a target="_blank"href="https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274000367468544-ih4W?utm_source=share&utm_medium=member_desktop"
+                    >Desenvolvimento de Portais com WCM</a></li>
+            </div>
+            
+        </div><div class="card toeic-card">
+                <div class="card-body">
+                    <h3>TOEIC</h3>
+                    <hr>
+                    <p>Inglês - Respeitado Internacionalmente</p>
+                    <p></p><li>
+                    <a target="_blank"href="https://www.linkedin.com/posts/gabrielsilvalves331_gostaria-de-compartilhar-minha-pontua%C3%A7%C3%A3o-activity-7099858525459230720-9U1H?utm_source=share&utm_medium=member_desktop">
+                        Listening & Reading Test: 860 de 990 pontos</a></li>
                 </div>
             </div>
-            <div class="project-images">
-            </div>
-        </div>
-        <div class="imagensproduto">
-            <div #swiperRef="" class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="overlay" onclick="mostrarProjeto(1)">
-                            <h1>Astro Shows</h1>
+      
+    </section>
+    <section id="exp">
+        <div class="section-100 d-flex justify-content-center section-background" style=" width: 100%;">
+            <div class="row masonry" style="width: 80%;">
+                <div class="col">
+                    <h2 class="text-white">Formação</h2>
+                    <div class="card card-type1">
+                        <div class="card-body card-type1">
+                            <h5 class="card-title card-type1">FORMADO</h5>
+                            <hr>
+                            <p class="text-white card-type1">Análise e desenvolvimento de sistemas na Fatec de Presidente Prudente</p>
+                            <p class="text-white card-type1">Ago 2023</p>
                         </div>
-                        <img src="img/astroshowsthumb.jpg" alt="" onclick="mostrarProjeto(1)">
+                      </div>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">Estágios</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">ARDUINO</h5>
+                            <hr>
+                            <p class="card-text">Na Empresa Júnior da Fatec representando a Creator4All, atuei na manutenção e programação de arduínos</p>
+                            <p>Mar 2023</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="overlay" onclick="mostrarProjeto(2)">
-                            <h1>Kalder Blog</h1>
-                        </div><img src="img/kalderblogthumb.jpg" alt="" onclick="mostrarProjeto(2)">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overlay" onclick="mostrarProjeto(3)">
-                            <h1>Darkwood</h1>
-                        </div><img src="img/darkwoodthumb.jpg" onclick="mostrarProjeto(3)">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overlay" onclick="mostrarProjeto(4)">
-                            <h1>Javascript</h1>
-                        </div><img src="img/javascript thumb.png" alt="" onclick="mostrarProjeto(4)">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overlay" onclick="mostrarProjeto(5)">
-                            <h1>Portfolio</h1>
-                        </div><img src="img/portfolio.png" alt="" onclick="mostrarProjeto(5)">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PROFESSOR</h5>
+                            <hr>
+                            <p class="card-text">Trabalhando na Escola HAPPY, ensinei jovens de 9-16 anos de idade: lógica de programação e a programar jogos</p>
+                            <p>05/2023 - 08/2023</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="col">
+                    <h2 class="text-white">Trabalho</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">DESENVOLVIMENTO WEB</h5>
+                            <hr>
+                            <p class="card-text">Desenvolvi o Sistema da <span class="color-accent">Secretaria Municipal de Saúde de Presidente Prudente</span> durante mais de 1 ano</p>
+                            <p>04/2023 - 05/2024</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">DESENVOLVIMENTO WEB</h5>
+                            <hr>
+                            <p class="card-text">Site de anúncio de casamento e recebimento de mensagens para os noivos. Feito para um <span class="color-accent">cliente real</span></p>
+                            <p>04/2023 - 05/2024</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-    <!-- /* ================================ FIM ================================================================ FIM ================================*/ -->
-    <!-- Swiper JS -->
+   
+    
+    <section id="projects" class="container">
+        <div class="row project-background mb-3">
+            <!-- Imagem grande -->
+            <div class="col-sm-7" id="imagemDestaque"></div>
+            <!-- Detalhes do projeto -->
+            <div class="col-sm-5  project-details">               
+                <h3 class="mt-2 ">AstroShows</h3>
+                <h5>Plataforma de venda de ingressos</h5>
+                <p class="mb-2">Escolha um projeto abaixo</p>
+                <h6 class="mb-3"></h6>
+                <a class="mb-2" href="https://www.linkedin.com/posts/gabrielsilvalves331_javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-external-link-alt"></i> Ver <span class="color-first">AstroShows</span></a>
+                <div class="project-images mt-3"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row gap-16">
+            <div class="card" style="width: 18rem;"onclick="mostrarProjeto(1)">
+                <img src="img/astroshowsthumb.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text ">Astroshows</p>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;"onclick="mostrarProjeto(2)">
+                <img src="img/kalderblogthumb.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">KalderBlogs</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;" onclick="mostrarProjeto(3)">
+                <img src="img/darkwoodthumb.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Darkwood</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;"onclick="mostrarProjeto(4)">
+                <img src="img/javascript thumb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Javascript Project</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;"onclick="mostrarProjeto(5)">
+                <img src="img/portfolio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Meu Portfólio</p>
+                </div>
+            </div>
+            <!-- <div class="swiper-slide col-auto mb-2">
+                <img src="img/astroshowsthumb.jpg" alt="" onclick="mostrarProjeto(1)">
+                <p>Astroshows</p>
+            </div>
+            <div class="swiper-slide col-auto">
+                <img src="img/kalderblogthumb.jpg" alt="" onclick="mostrarProjeto(2)">
+                <p>KalderBlogs</p>
+            </div>
+            <div class="swiper-slide col-auto">
+               <img src="img/darkwoodthumb.jpg" onclick="mostrarProjeto(3)">
+               <p>Darkwood</p>
+            </div>
+            <div class="swiper-slide col-auto">
+                <img src="img/javascript thumb.png" alt="" onclick="mostrarProjeto(4)">
+            </div>
+            <div class="swiper-slide col-auto">
+                <img src="img/portfolio.png" alt="" onclick="mostrarProjeto(5)">
+            </div>   -->          
+        </div>
+    </section>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Adiciona um ouvinte de evento de clique ao elemento pai que envolve as imagens do projeto
@@ -245,10 +252,7 @@
             });
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- /swiper -->
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
