@@ -1,0 +1,98 @@
+.corvo {
+  width: 200px;
+  pointer-events: none;
+  border-radius: 40px;
+  transform: scaleX(-1);
+}
+a i, a p{
+  margin:0;
+  margin-right: 5px;
+}
+.gap-16{
+  gap:16px;
+}
+
+#contato{
+  gap:5px;
+}
+#contato a{
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.span-dev {
+  background: radial-gradient(circle, rgb(123, 25, 179) 0%, rgb(61, 255, 61) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Para compatibilidade com WebKit */
+  background-clip: text;
+  color: transparent; /* Para navegadores que suportam background-clip */
+  font-weight: 700;
+}
+.span-dev:hover{
+  box-shadow: 2px red;
+}
+.corvo-container {
+  position: relative;
+
+}
+.corvo {
+  max-width: 100%; 
+}
+
+/* Estilos para os ícones */
+.corvo-container a {
+  position: absolute;
+  color: var(--text-color); 
+  font-size: 24px; 
+  text-decoration: none;
+}
+
+/* Posicionamento específico dos ícones */
+.corvo-container a:nth-of-type(1) {
+  top: 30%;
+  left: 0%;                  
+}
+
+.corvo-container a:nth-of-type(2) {
+  top: 45%; 
+  left: 0%; 
+}
+
+.corvo-container a:nth-of-type(3) {
+  top: 60%; 
+  left: 0%; 
+}
+
+.corvo-container a:nth-of-type(4) {
+  top: 75%; 
+  left: 0%; 
+}
+
+.corvo-container a:nth-of-type(5) {
+  top: 90%; 
+  left: 0%; 
+  font-size:20px
+}
+.icone-disponivel{
+  position: inherit;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(61, 255, 61);
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 2;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }}

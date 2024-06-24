@@ -1,0 +1,65 @@
+:root{
+  
+  --text-color:white;
+  --not-text-color:black;
+  --background-color:#09090b;
+  --gray-color:rgb(141, 141, 141);
+  --first-color: rgb(168, 33, 231);
+  --cor-botao:green;
+}
+.dark-theme{
+  --text-color:black;
+  --not-text-color:white  ;
+  --background-color:white;
+  --first-color: rgb(33, 231, 33);
+  --cor-botao:purple;
+}
+body{
+  color:var(--text-color);
+  background-color: var(--background-color);
+  font-family:"Montserrat", sans-serif;
+}
+.color-first{
+  color: var(--first-color);
+}
+.color-first:hover{
+  color: rgb(205, 33, 228);
+}
+.color-not{
+  color: var(--not-text-color);
+}
+.color-gray{
+  color: var(--gray-color);
+}
+.color-text{
+  color: var(--text-color);
+}
+.fw-300{
+  font-weight: 300;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-800{
+  font-weight: 800;
+}
+/* Tamanho da seção ocupa tela toda */
+.vh100{
+  height:80vh;
+}
+.sublinhado{
+  text-decoration: underline;
+}
+.caixa{
+  border: .1px solid rgb(131, 131, 131);
+  border-radius: .75rem;
+}

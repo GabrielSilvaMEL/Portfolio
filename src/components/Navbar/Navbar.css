@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.contato-div a{
+    color: var(--text-color);
+    margin: 0;
+    font-size: 17px;
+}
+a:hover{
+    color: var( --first-color);
+}
+.hire-me{
+    background: linear-gradient(90deg,var(--cor-botao) 0%, #7e61e7 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+  }
