@@ -9,7 +9,7 @@ type CertifiedProps = {
 
 const Certified: React.FC<CertifiedProps> = ({ certifications }) => {
     return (
-        <div className='container mb-5'>
+        <div className='container mb-5'id='certificados'>
         <h3 className='title fw-800 mb-3 text-center'>CERTIFICADOS</h3>
         <div className='row'>
             {certifications.map((cert, index) => (

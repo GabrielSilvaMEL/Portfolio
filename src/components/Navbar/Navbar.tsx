@@ -17,10 +17,10 @@ const Navbar = () =>{
         <div className="d-flex position-sticky align-items-center text-center justify-content-around mt-4">
             <span className=''>Gabriel</span>
             <div className="row gap-0 ">
-                <a className="col-auto" href="#home">Home</a>
+                <a className="col-auto" href="#projects">Projetos</a>
                 <a className="col-auto" href="#certificados">Certificados</a>
                 <a className="col-auto" href="#exp">Experiences</a>
-                <a className="col-auto" href="#projects">Projetos</a>
+                
                 <div className='d-flex flex-row col-auto gap-16 align-items-center text-center justify-content-center contato-div'>
                 <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn"
                     className="fab fa-linkedin-in" target="_blank"></a>

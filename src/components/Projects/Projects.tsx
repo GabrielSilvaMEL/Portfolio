@@ -69,7 +69,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="container mt-4">
+        <div className="container mt-4" id='projects'>
             <h3 className='title fw-800 mb-3 text-center'>PROJETOS</h3>
             <div className="row">
                 <div className="col-md-3">

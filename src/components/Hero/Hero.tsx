@@ -4,7 +4,7 @@ import "./Hero.css";
 import corvo from "../../img/corvo.png";
 const Hero=()=>{
     return(
-        <div className='d-flex flex-row justify-content-around align-items-center vh100 '>
+        <div className='d-flex flex-row justify-content-around align-items-center vh100' id='home'>
             <div className="d-flex flex-column col-md-6 col-sm-12">
                 <h2 className='mb-0 fw-600'>Olá, sou o Gabriel e sou</h2>
                 <h2><span className='span-dev mt-0'>Desenvolvedor de Software</span></h2>
