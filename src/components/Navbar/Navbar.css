@@ -2,11 +2,14 @@ a{
     text-decoration: none;
     color: var(--text-color);
     cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .contato-div a{
     color: var(--text-color);
     margin: 0;
     font-size: 17px;
+    
 }
 a:hover{
     color: var( --first-color);
@@ -16,4 +19,55 @@ a:hover{
     color: white;
     font-weight: 700;
     border-radius: 20px;
+    padding: 3px 14px;
+    transition: 0.3s;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  .hire-me:hover{
+    padding: 5px 20px ;
+    transition: 0.3s;
+  }
+
+/* Estilo do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+    min-width: 160px;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+    background-color: var(--background-color);
+    
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .flag-icon {
+    width: 26px;
+    height: 18px;
+    margin-right: 10px;
   }

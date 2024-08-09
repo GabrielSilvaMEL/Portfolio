@@ -4,16 +4,18 @@
   --not-text-color:black;
   --background-color:#09090b;
   --gray-color:rgb(141, 141, 141);
-  --first-color: rgb(168, 33, 231);
+  --first-color: rgb(33, 231, 33);
   --cor-botao:green;
 }
 .dark-theme{
   --text-color:black;
   --not-text-color:white  ;
-  --background-color:white;
-  --first-color: rgb(33, 231, 33);
+  --background-color:rgb(236, 233, 233);
+  --first-color: rgb(168, 33, 231);
   --cor-botao:purple;
+  --gray-color:rgb(54, 54, 54);
 }
+
 body{
   color:var(--text-color);
   background-color: var(--background-color);

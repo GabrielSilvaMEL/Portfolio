@@ -95,13 +95,13 @@ const Projects = () => {
                                 <span key={index} className="badge me-2">{lang}</span>
                             ))}
                              <p className="project-description mb-0">{currentProject.description}</p>
-                             
-                        </div>
-                        <div className="project-link">
+                             <div className="project-link">
                             <a href={currentProject.projectLink} className="btn btn-projeto fw-700" target="_blank" rel="noopener noreferrer">
                                 Ver Projeto <i className="fas fa-external-link-alt"></i>
                             </a>
                         </div>
+                        </div>
+                        
                     </div>
                     <div className="mt-3 d-flex flex-wrap">
                         {currentProject.images.map((image, index) => (
