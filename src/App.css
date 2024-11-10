@@ -2,7 +2,7 @@
   
   --text-color:white;
   --not-text-color:black;
-  --background-color:#09090b;
+  --background-color:#141414;
   --gray-color:rgb(141, 141, 141);
   --first-color: rgb(33, 231, 33);
   --cor-botao:green;
@@ -19,7 +19,7 @@
 body{
   color:var(--text-color);
   background-color: var(--background-color);
-  font-family:"Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .color-first{
   color: var(--first-color);
