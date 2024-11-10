@@ -6,14 +6,13 @@ const Hero=()=>{
     return(
         <div className='d-flex flex-row justify-content-around align-items-center vh100' id='home'>
             <div className="d-flex flex-column col-md-6 col-sm-12">
-                <h2 className='mb-0 fw-600'>Olá, sou o Gabriel e sou</h2>
+                <h2 className='mb-0 fw-700'>Olá, sou o Gabriel e sou</h2>
                 <h2><span className='span-dev mt-0'>Desenvolvedor de Software</span></h2>
-                <p className='color-gray mb-0 fw-500' title='Secretaria Municipal de Saúde de Presidente Prudente'>Trabalhei na <span className='color-text fw-700'>Secretaria de Saúde de Presidente Prudente</span></p>
                 <p className='color-gray fw-500'>Formado em <span className='color-text fw-700'>Análise e Desenvolvimento de Sistemas</span></p>
                 <br />
                 <div className='d-flex flex-row align-items-center gap-16  mb-0 '>
                     <div className="icone-disponivel mb-3"></div>
-                    <p>Atualmente Analista de TI na <a href='https://clinicalabmed.com.br' target='blank_' className='fw-600 color-first sublinhado'>LABMED - CENTRO DE SAÚDE INTEGRADO</a>.</p>
+                    <p className='fw-500'>Disponível para oportunidades.</p>
                 </div>
             </div>
             <div className='corvo-container'>

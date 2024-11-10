@@ -4,6 +4,9 @@
   border-radius: 40px;
   transform: scaleX(-1);
 }
+p, a{
+  font-size: 18px;
+}
 a i, a p{
   margin:0;
   margin-right: 5px;
@@ -24,7 +27,7 @@ p{
   font-weight: 400;
 }
 .span-dev {
-  background: radial-gradient(circle, rgb(123, 25, 179) 0%, rgb(61, 255, 61) 100%);
+  background: radial-gradient(circle, var(--first-color), var(--cor-botao) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Para compatibilidade com WebKit */
   background-clip: text;

@@ -13,9 +13,10 @@ a{
 }
 a:hover{
     color: var( --first-color);
+    transform: scale(1.05);
 }
 .hire-me{
-    background: linear-gradient(90deg,var(--cor-botao) 0%, #7e61e7 100%);
+    background: linear-gradient(90deg,var(--cor-botao) 0%, var(--first-color) 100%);
     color: white;
     font-weight: 700;
     border-radius: 20px;
@@ -25,8 +26,8 @@ a:hover{
     user-select: none;
   }
   .hire-me:hover{
-    padding: 5px 20px ;
-    transition: 0.3s;
+    transform: scale(1.05);
+    z-index: 1;
   }
 
 /* Estilo do dropdown */

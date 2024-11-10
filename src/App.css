@@ -1,19 +1,21 @@
 :root{
-  
-  --text-color:white;
-  --not-text-color:black;
-  --background-color:#141414;
-  --gray-color:rgb(141, 141, 141);
-  --first-color: rgb(33, 231, 33);
-  --cor-botao:green;
+  --text-color:#180136;
+  --not-text-color:white  ;
+  --light-first-color:#fb257727;
+  --background-color:#fffffe;
+  --first-color: #FB2576;
+  --cor-botao:#3F0071;
+  --gray-color:rgb(54, 54, 54);
+ 
 }
 .dark-theme{
-  --text-color:black;
-  --not-text-color:white  ;
-  --background-color:rgb(236, 233, 233);
-  --first-color: rgb(168, 33, 231);
-  --cor-botao:purple;
-  --gray-color:rgb(54, 54, 54);
+  --text-color:white;
+  --not-text-color:black;
+  --background-color:#000000;
+  --light-first-color:#fb257738;
+  --gray-color:rgb(141, 141, 141);
+  --first-color: #FB2576;
+  --cor-botao:#3F0071;
 }
 
 body{
@@ -25,7 +27,7 @@ body{
   color: var(--first-color);
 }
 .color-first:hover{
-  color: rgb(205, 33, 228);
+  color: #150050;
 }
 .color-not{
   color: var(--not-text-color);
@@ -56,6 +58,9 @@ body{
 }
 /* Tamanho da seção ocupa tela toda */
 .vh100{
+  height:100vh;
+}
+.vh80{
   height:80vh;
 }
 .sublinhado{
