@@ -4,6 +4,10 @@ a{
     cursor: pointer;
     user-select: none;
     -webkit-user-drag: none;
+    font-family: poppins;
+}
+a:hover{
+    color: white;
 }
 .contato-div a{
     color: var(--text-color);
@@ -11,14 +15,9 @@ a{
     font-size: 17px;
     
 }
-a:hover{
-    color: var( --first-color);
-    transform: scale(1.05);
-}
 .hire-me{
-    background: linear-gradient(90deg,var(--cor-botao) 0%, var(--first-color) 100%);
+    background: var(--first-color);
     color: white;
-    font-weight: 700;
     border-radius: 20px;
     padding: 3px 14px;
     transition: 0.3s;
@@ -28,14 +27,13 @@ a:hover{
   .hire-me:hover{
     transform: scale(1.05);
     z-index: 1;
+    background-color: var(--cor-botao);
   }
 
-/* Estilo do dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
   }
-  
   .dropdown-menu {
     display: none;
     position: absolute;
@@ -48,7 +46,6 @@ a:hover{
     z-index: 1;
     min-width: 160px;
   }
-  
   .dropdown-menu.show {
     display: block;
     background-color: var(--background-color);

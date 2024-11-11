@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Projects.css";
-import fluig from "../../img/fluig_logo.png";
+
 type Project = {
     title: string;
     thumb: string;

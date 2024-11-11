@@ -1,37 +1,61 @@
-import React, { useState } from 'react';
+import React from 'react';
+import fluig from "../../img/fluig_logo.png";
 import "./Certified.css";
-type CertifiedProps = {
-    certifications: {
-        title: string;
-        items: { text: string; link: string }[];
-    }[];
-};
+interface Certification {
+    title: string;
+    items: { text: string; link: string }[];
+}
 
-const Certified: React.FC<CertifiedProps> = ({ certifications }) => {
-    return (
-        <div className='container mb-5'id='certificados'>
-        <h3 className='title fw-800 mb-3 text-center'>CERTIFICADOS</h3>
+interface CertifiedProps {
+    certifications: Certification[];
+}
+
+const Certified: React.FC<CertifiedProps> = ({ certifications }) => (
+    <div className='container mb-5' id='certificados'>
+        <div className='row align-items-center mb-4'>
+            <div className='col-md-6 text-center'>
+                <img src={fluig} alt="Fluig Logo" className='img-fluid' style={{ maxWidth: '150px' }} />
+            </div>
+            <div className='col-md-6'>
+                <div className='card h-100'>
+                    <div className='card-body'>
+                        <h5 className='fw-800 mb-0'>Certificados TOTVS Fluig</h5>
+                        <ul>
+                            {certifications
+                                .find((cert: Certification) => cert.title === 'TOTVS FLUIG')?.items.map((item, index: number) => (
+                                    <li key={index}>
+                                        <a className='fw-500' href={item.link} target="_blank" rel="noopener noreferrer">
+                                            {item.text}
+                                        </a>
+                                    </li>
+                                ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
         <div className='row'>
-            {certifications.map((cert, index) => (
-                <div className='col-md-6 mb-4' key={index}>
-                    <div className='card h-100'>
-                        <div className='card-body'>
-                            <h5 className='fw-800 mb-0'>{cert.title}</h5>
-                            <ul>
-                                {cert.items.map((item, itemIndex) => (
-                                    <li key={itemIndex}>
+            <div className='col-md-12'>
+                <div className='card h-100'>
+                    <div className='card-body'>
+                        <h5 className='fw-800 mb-0'>Certificado de Idioma</h5>
+                        <ul>
+                            {certifications
+                                .find((cert: Certification) => cert.title === 'TOEIC - Listening and Reading Test')?.items.map((item, index: number) => (
+                                    <li key={index}>
                                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                                             {item.text}
                                         </a>
                                     </li>
                                 ))}
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                 </div>
-            ))}
+            </div>
         </div>
     </div>
-    );
-};
+);
+
 export default Certified;

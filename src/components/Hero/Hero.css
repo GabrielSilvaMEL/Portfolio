@@ -11,6 +11,12 @@ a i, a p{
   margin:0;
   margin-right: 5px;
 }
+a:hover{
+  transform: scale(1.05);
+}
+.far, .fab{
+  font-size: 22px !important;
+}
 .gap-16{
   gap:16px;
 }
@@ -27,12 +33,14 @@ p{
   font-weight: 400;
 }
 .span-dev {
-  background: radial-gradient(circle, var(--first-color), var(--cor-botao) 100%);
+  background: var(--first-color);
+  background: linear-gradient(90deg, var(--cor-botao)  0%, var(--first-color) 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Para compatibilidade com WebKit */
+  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; /* Para navegadores que suportam background-clip */
-  font-weight: 700;
+  color: transparent;
+  font-size: 60px;
+  cursor: default;
 }
 .span-dev:hover{
   box-shadow: 2px red;
@@ -45,7 +53,6 @@ p{
   max-width: 100%; 
 }
 
-/* Estilos para os ícones */
 .corvo-container a {
   position: absolute;
   color: var(--text-color); 
@@ -53,7 +60,6 @@ p{
   text-decoration: none;
 }
 
-/* Posicionamento específico dos ícones */
 .corvo-container a:nth-of-type(1) {
   top: 30%;
   left: 0%;                  

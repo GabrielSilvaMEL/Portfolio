@@ -109,7 +109,7 @@
     background-color: var(--cor-botao);
 }
 .badge{
-    background-color: var(--text-color);
+    background-color: black;
 }
 .badge:hover{
     transform: scale(1.1);

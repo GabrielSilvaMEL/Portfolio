@@ -20,29 +20,23 @@ const Navbar = () =>{
   };
     return(
     <div className="d-flex  align-items-center text-center justify-content-around mt-4">
-      <span className="fw-600">Gabriel</span>
-        <div className="row gap-0 fw-600">
+        <p className="poppins-400">Gabriel</p>
+        <div className="row gap-0 poppins-400">
         <a className="col-auto" href="#projects">Projetos</a>
         <a className="col-auto" href="#certificados">Certificados</a>
         <a className="col-auto" href="#exp">Experiências</a>
 
-        <div className="d-flex flex-row col-auto gap-16 align-items-center text-center justify-content-center contato-div">
-          <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn"
-            className="fab fa-linkedin-in" target="_blank"></a>
-          <a href="https://github.com/gabrielsilvamel" title="Github" className="fab fa-github"
-            target="_blank"></a>
-          <a href="mailto:gabrielsilvaalves3000@outlook.com" title="Enviar Email" className="far fa-envelope"
-            target="_blank"></a>
-        </div>
+      
 
-        <a className="col-auto" onClick={toggleTheme}>
+        {/* <a className="col-auto" onClick={toggleTheme}>
           <i className={isDarkMode ? 'far fa-sun' : 'far fa-moon'}></i>
           {isDarkMode ? 'Light' : 'Dark'} Mode
-        </a>
+        </a> */}
+        
 
         {/* Dropdown de Currículo */}
-        <div className="dropdown col-auto">
-          <a className="hire-me dropdown-toggle" onClick={toggleDropdown} title="Baixar Currículo">
+        <div className="dropdown col-auto poppins-400">
+          <a className="hire-me dropdown-toggle poppins-400" onClick={toggleDropdown} title="Baixar Currículo">
             <i className="fas fa-download"></i> Currículo
           </a>
           {isDropdownOpen && (
