@@ -1,22 +1,23 @@
 :root{
-  /* --text-color:#180136;
-  --not-text-color:white  ;
-  --light-first-color:#fb257727;
-  --background-color:#fffffe;
-  --first-color: #FB2576;
-  --cor-botao:#3F0071;
-  --gray-color:rgb(54, 54, 54); */
+  --text-color:#21040C;
+  --not-text-color:white;
+  --light-first-color:#E8DEC8;
+  --background-color:#ffffff;
+  --first-color: #4B1313;
+  --secondary:#8D6D4C;
+  --cor-botao:#3C2A21;
+  --gray-color:rgb(54, 54, 54);
+  --light-gray:#f6eee1;
  
-  --text-color:#c0c4cd;
+  /* --text-color:#c0c4cd;
   --not-text-color:black;
   --background-color:#05030b;
   --light-first-color:#25c9fb38;
   --gray-color:rgb(141, 141, 141);
   --first-color: #28b9eb;
-  --cor-botao:#28baeb7c;
+  --cor-botao:#28baeb7c; */
 }
 .dark-theme{
-
   --text-color:#180136;
   --not-text-color:white  ;
   --light-first-color:#fb257727;
@@ -43,8 +44,14 @@ body{
 .color-first{
   color: var(--first-color);
 }
+.color-second{
+  color: var(--secondary);
+}
+.color-button{
+  color: var(--cor-botao);
+}
 .color-first:hover{
-  color: #150050;
+  color: var(--cor-botao);
 }
 .color-not{
   color: var(--not-text-color);
@@ -54,6 +61,15 @@ body{
 }
 .color-text{
   color: var(--text-color);
+}
+.light-gray{
+  color: var(--light-gray);
+}
+.back-first{
+  background-color: var(--first-color);
+}
+.back-second{
+  background-color: var(--second);
 }
 .fw-300{
   font-weight: 300;
@@ -194,4 +210,7 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+.padding-vertical{
+  padding: 50px 0;
 }

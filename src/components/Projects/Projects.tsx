@@ -77,54 +77,61 @@ const Projects = () => {
     };
 
     return (
-        <div className="container mt-4 mb-5" id="projects">
-            <h3 className="title fw-800 mb-3 text-center">Clique em um projeto</h3>
+        <div className="mt-4 mb-5 back-first" id="projects">
+            <div className='container padding-vertical'>
+            
 
             {/* Miniaturas dos projetos */}
             <div className="project-thumbnails">
-                {projects.map((project, index) => (
+                <h3 className="title fw-800 text-center align-text-end mb-0 light-gray">Meus projetos</h3>
+                
+            </div>
+
+            {/* Verifica se há um projeto selecionado para exibir os detalhes */}
+                {currentProject && (
+                    <div className="project-main-content mt-3 d-flex">
+                        <div className="project-image-container position-relative me-3 mb-2">
+                            <button onClick={handlePreviousImage} className="navigation-arrow left-arrow">{"<"}</button>
+                            <img
+                                src={currentProject.images[currentImageIndex]}
+                                alt={currentProject.title}
+                                className="main-image"
+                            />
+                            <button onClick={handleNextImage} className="navigation-arrow right-arrow">{">"}</button>
+                        </div>
+
+                        <div className="project-info">
+                            <h4 className='fw-600 light-gray'>{currentProject.title}</h4>
+                            <div className="project-languages-overlay">
+                                {currentProject.languages.map((lang, index) => (
+                                    <span key={index} className="badge me-2">{lang}</span>
+                                ))}
+                            </div>
+                            <p className="project-description fw-500 ">{currentProject.description}</p>
+                            <div className="project-link">
+                                <a href={currentProject.projectLink} className="btn-projeto " target="_blank" rel="noopener noreferrer">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+            <div className="row">
+            {projects.map((project, index) => (
                     <div
                         key={index}
                         className={`project-thumb ${index === currentProjectIndex ? 'selected' : ''}`}
                         onClick={() => handleProjectChange(index)}
                     >
                         <img src={project.thumb} alt={project.title} />
-                        <div className="project-title-overlay">
+                        <div className="project-title-overlay light-gray">
                             <h5>{project.title}</h5>
                         </div>
                     </div>
                 ))}
             </div>
-
-            {/* Se um projeto foi selecionado, mostra os detalhes e a imagem grande */}
-            {currentProject && (
-                <div className="project-main-content mt-3 d-flex">
-                    <div className="project-image-container position-relative me-3">
-                        <button onClick={handlePreviousImage} className="navigation-arrow left-arrow">{"<"}</button>
-                        <img
-                            src={currentProject.images[currentImageIndex]}
-                            alt={currentProject.title}
-                            className="main-image"
-                        />
-                        <button onClick={handleNextImage} className="navigation-arrow right-arrow">{">"}</button>
-                    </div>
-
-                    <div className="project-info">
-                        <h4 className='fw-600'>{currentProject.title}</h4>
-                        <div className="project-languages-overlay">
-                            {currentProject.languages.map((lang, index) => (
-                                <span key={index} className="badge me-2">{lang}</span>
-                            ))}
-                        </div>
-                        <p className="project-description fw-500">{currentProject.description}</p>
-                        <div className="project-link mt-3">
-                            <a href={currentProject.projectLink} className="btn btn-projeto fw-700" target="_blank" rel="noopener noreferrer">
-                                Ver Projeto <i className="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            )}
+            </div>
         </div>
     );
 };

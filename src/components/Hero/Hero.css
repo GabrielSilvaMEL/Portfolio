@@ -15,7 +15,7 @@ a:hover{
   transform: scale(1.05);
 }
 .far, .fab{
-  font-size: 22px !important;
+  font-size: 26px !important;
 }
 .gap-16{
   gap:16px;
@@ -34,7 +34,6 @@ p{
 }
 .span-dev {
   background: var(--first-color);
-  background: linear-gradient(90deg, var(--cor-botao)  0%, var(--first-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -7,13 +7,13 @@ a{
     font-family: poppins;
 }
 a:hover{
-    color: white;
+    color: var(--cor-botao);
+    font-weight: 500;
 }
 .contato-div a{
     color: var(--text-color);
     margin: 0;
-    font-size: 17px;
-    
+    font-size: 18px;
 }
 .hire-me{
     background: var(--first-color);
@@ -28,6 +28,7 @@ a:hover{
     transform: scale(1.05);
     z-index: 1;
     background-color: var(--cor-botao);
+    color: white;
   }
 
 .dropdown {

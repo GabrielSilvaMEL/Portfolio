@@ -11,20 +11,20 @@ interface CertifiedProps {
 }
 
 const Certified: React.FC<CertifiedProps> = ({ certifications }) => (
-    <div className='container mb-5' id='certificados'>
-        <div className='row align-items-center mb-4'>
-            <div className='col-md-6 text-center'>
+    <div className='container mb-5 ' id='certificados'>
+        <div className='row align-items-center back-certificate'>
+            <div className='col-md-4 text-center'>
                 <img src={fluig} alt="Fluig Logo" className='img-fluid' style={{ maxWidth: '150px' }} />
             </div>
-            <div className='col-md-6'>
-                <div className='card h-100'>
-                    <div className='card-body'>
+            <div className='col-md-8'>
+                <div className='h-100'>
+                    <div>
                         <h5 className='fw-800 mb-0'>Certificados TOTVS Fluig</h5>
                         <ul>
                             {certifications
                                 .find((cert: Certification) => cert.title === 'TOTVS FLUIG')?.items.map((item, index: number) => (
                                     <li key={index}>
-                                        <a className='fw-500' href={item.link} target="_blank" rel="noopener noreferrer">
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer">
                                             {item.text}
                                         </a>
                                     </li>
@@ -36,10 +36,13 @@ const Certified: React.FC<CertifiedProps> = ({ certifications }) => (
         </div>
 
         
-        <div className='row'>
-            <div className='col-md-12'>
-                <div className='card h-100'>
-                    <div className='card-body'>
+        <div className='row back-certificate'>
+            <div className='col-md-4 text-center'>
+                <img src="Flag_USA.png" alt="Fluig Logo" className='img-fluid' style={{ maxWidth: '150px' }} />
+            </div>
+            <div className='col-md-8'>
+                <div className='h-100'>
+                    <div>
                         <h5 className='fw-800 mb-0'>Certificado de Idioma</h5>
                         <ul>
                             {certifications
@@ -54,6 +57,7 @@ const Certified: React.FC<CertifiedProps> = ({ certifications }) => (
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 );
