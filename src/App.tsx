@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import Exp from './components/Exp/Exp';
 import Certified from './components/Certified/Certified';
 import Projects from './components/Projects/Projects';
@@ -58,6 +59,7 @@ const App=()=> {
     <Navbar/>
     <div>
       <Hero/>
+      <About/>
       <Projects/>
       <Certified certifications={certifications} />
       <Exp experiences={experiences}/>
