@@ -1,0 +1,17 @@
+.sobre-mim{
+    font-size: 22px !important;
+}
+h2,h4,p{
+    cursor: default;
+}
+.linguagem-badge{
+    background-color: rgb(35, 35, 68);
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.137);
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+.linguagem-badge:hover{
+    transform: scale(1.05);
+}
