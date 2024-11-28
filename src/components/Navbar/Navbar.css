@@ -1,36 +1,16 @@
 a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--gray);
     cursor: pointer;
     user-select: none;
     -webkit-user-drag: none;
     font-family: poppins;
-}
-a:hover{
-    color: var(--cor-botao);
     font-weight: 500;
 }
-.contato-div a{
-    color: var(--text-color);
-    margin: 0;
-    font-size: 18px;
+a:hover{
+    font-weight: 600;
+    color: white;
 }
-.hire-me{
-    background: var(--first-color);
-    color: white;
-    border-radius: 20px;
-    padding: 3px 14px;
-    transition: 0.3s;
-    -webkit-user-drag: none;
-    user-select: none;
-  }
-  .hire-me:hover{
-    transform: scale(1.05);
-    z-index: 1;
-    background-color: var(--cor-botao);
-    color: white;
-  }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -49,10 +29,14 @@ a:hover{
   }
   .dropdown-menu.show {
     display: block;
-    background-color: var(--background-color);
-    
+    background-color: var(--principal);
+    a{
+      color: white;
+    }
+    a:hover{
+      color:var(--principal);
+    }
   }
-  
   .dropdown-item {
     padding: 10px 20px;
     color: var(--text-color);
@@ -60,11 +44,9 @@ a:hover{
     display: flex;
     align-items: center;
   }
-  
   .dropdown-item:hover {
     background-color: #f0f0f0;
   }
-  
   .flag-icon {
     width: 26px;
     height: 18px;
