@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "Plataforma de venda de ingressos. Painel administrativo e funcional. Login de administrador e usuários, cada um com acessos diferentes.",
     projectLink:
-      "https://www.linkedin.com/posts/gabrielsilvalves331_javascript-css-php-activity-7017916449834868736-elb4?utm_source=share&utm_medium=member_desktop",
+      "https://www.linkedin.com/posts/gabriel331_javascript-css-php-activity-7017916449834868736-AaZ_?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "KalderBlog",
@@ -25,7 +25,7 @@ const projects: Project[] = [
     languages: ["PHP", "Laravel", "Blade", "Vite", "BD"],
     description: "Blog sobre a indústria musical. Painel administrativo e funcional.",
     projectLink:
-      "https://www.linkedin.com/posts/gabrielsilvalves331_vite-laravel-frontend-activity-7111082136538918912-oiDO?utm_source=share&utm_medium=member_desktop",
+      "https://www.linkedin.com/posts/gabriel331_vite-laravel-frontend-activity-7111082136538918912-5w3U?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "Darkwood",
