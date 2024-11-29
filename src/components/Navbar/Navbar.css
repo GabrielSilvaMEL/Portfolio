@@ -22,6 +22,7 @@ a:hover{
       opacity: 90%;
       width: 100vw;
       font-size: 20px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.26);
     }
     .navbar{
       position: fixed;
@@ -29,8 +30,13 @@ a:hover{
       
       display: flex;
       justify-content: center;
-      gap: 0px !important;
+      
 
+      background-color: var(--principal-hover);
+      opacity: 90%;
+      width: 100vw;
+      font-size: 20px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.26);
     }
     a{
       font-size: 10px;
