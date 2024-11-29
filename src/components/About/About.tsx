@@ -43,8 +43,8 @@ const About=()=>{
                 </div>
                 <div className="dropdown d-flex flex-row justify-content-center align-content-center col-auto poppins-400 mt-5 gap-16">
                     <div className="flex-row d-flex gap-16 ">
-                        <a className="fab fa-linkedin line-10"></a>
-                        <a className="fab fa-github line-10"></a>
+                        <a href="https://www.linkedin.com/in/gabriel331/" target='_blank' className="fab fa-linkedin line-10"></a>
+                        <a href="https://github.com/gabrielsilvamel" target='_blank' className="fab fa-github line-10"></a>
                     </div>
                     <a className="botao-principal dropdown-toggle poppins-400" onClick={toggleDropdown} title="Baixar Currículo">
                         <i className="fas fa-download"></i> Currículo
