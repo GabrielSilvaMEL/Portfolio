@@ -15,3 +15,54 @@ h2,h4,p{
 .linguagem-badge:hover{
     transform: scale(1.05);
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+    min-width: 160px;
+  }
+  .dropdown-menu.show {
+    display: block;
+    background-color: var(--principal);
+    a{
+      color: white;
+    }
+    a:hover{
+      color:var(--principal);
+    }
+  }
+  .dropdown-item {
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  .flag-icon {
+    width: 26px;
+    height: 18px;
+    margin-right: 10px;
+  }
+@media (max-width: 768px) {
+   
+  
+    /* Reduz os botões para telas pequenas */
+    #about .gap-16 {
+      flex-direction: column; /* Alinha verticalmente */
+      gap: 12px;
+    }
+  }

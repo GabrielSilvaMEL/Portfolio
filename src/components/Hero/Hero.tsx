@@ -4,7 +4,7 @@ import "./Hero.css";
 import corvo from "../../img/corvo.png";
 const Hero=()=>{
     return(
-        <div className='d-flex flex-row justify-content-around align-items-center vh80 container' id='home'>
+        <div className='d-flex flex-row justify-content-around align-items-center vh100 container p-3' id='home'>
             <div className="d-flex flex-column col-md-8 col-sm-12">
                 {/* <div className="d-flex flex-row col-auto gap-16 align-items-center text-center justify-content-left contato-div">
                     <p className='mb-0'>Entre em contato!</p>
@@ -21,8 +21,8 @@ const Hero=()=>{
                 <br />
                 
                 <div className='d-flex flex-row align-items-center gap-16  mb-0 '>
-                    <a className='botao-branco fw-500'>Entrar em contato <i className="fas fa-long-arrow-alt-right"></i></a>
-                    <a className='botao-principal fw-500'>Ver meu trabalho <i className="fas fa-long-arrow-alt-right"></i></a>
+                    <a href="mailto:gabrielsilvaalves3000@gmail.com?subject=Entrar%20em%20contato&body=Olá, gostaria de falar sobre..." className='botao-branco fw-500'>Entrar em contato <i className="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#projects' className='botao-principal fw-500'>Ver meu trabalho <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
             <div className='corvo-container'>

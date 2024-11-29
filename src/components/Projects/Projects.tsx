@@ -38,7 +38,7 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" id="projects">
       <h3 className="title text-center mb-0 zain-bold ">Meus Projetos</h3>
       <h4 className="title text-center color-gray zain-bold mb-4 ">No que trabalhei recentemente</h4>
       <div className="row">

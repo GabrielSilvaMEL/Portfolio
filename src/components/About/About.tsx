@@ -9,12 +9,12 @@ const About=()=>{
     };
     return(
         <div className='back-first' id='about'>
-            <div className="container d-flex flex-column justify-content-center align-items-center p-5 ">
+            <div className="container d-flex flex-column justify-content-center align-items-center p-3">
                 <h2 className='zain-bold mb-0 mt-3'>Sobre mim</h2>
                 <h4 className="zain-bold color-gray mb-3">Coding & Helping</h4>
                 <p className='zain-bold text-center sobre-mim'>Olá, sou o Gabriel, formado em ADS e com experiência em desenvolvimento full-stack na área da saúde, gosto de ajudar os outros a passar por problemas com maior facilidade, fazendo com que meu trabalho seja útil para os usuários.</p>
                 <br />
-                <div className="container d-flex flex-row justify-content-center align-items-center gap-16">
+                <div className="d-flex justify-content-center align-items-center gap-16">
                     <div className="linguagem-badge">
                         <i className="fab fa-php"></i> PHP
                     </div>

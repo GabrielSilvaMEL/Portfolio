@@ -3,6 +3,11 @@
   pointer-events: none;
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  .foto {
+    display: none; /* Esconde a imagem em dispositivos menores */
+  }
+}
 p, a{
   font-size: 18px;
 }
