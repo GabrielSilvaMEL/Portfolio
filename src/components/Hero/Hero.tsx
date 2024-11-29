@@ -21,7 +21,7 @@ const Hero=()=>{
                 <br />
                 
                 <div className='d-flex flex-row align-items-center gap-16  mb-0 '>
-                    <a href="mailto:gabrielsilvaalves3000@gmail.com?subject=Entrar%20em%20contato&body=Olá, gostaria de falar sobre..." className='botao-branco fw-500'>Entrar em contato <i className="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#about' className='botao-branco fw-500'>Entrar em contato <i className="fas fa-long-arrow-alt-right"></i></a>
                     <a href='#projects' className='botao-principal fw-500'>Ver meu trabalho <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>

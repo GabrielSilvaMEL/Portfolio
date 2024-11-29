@@ -8,7 +8,6 @@ const Navbar = () =>{
           <a className="col-auto" href="#about">Sobre</a>
           <a className="col-auto" href="#projects">Projetos</a>
           <a className="col-auto" href="#exp">Experiência</a>
-          <a className="col-auto" href="#contato">Contato</a>
         </div>
       </div>
 

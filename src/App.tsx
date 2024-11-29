@@ -16,11 +16,11 @@ const certifications = [
   {
       title: 'TOTVS FLUIG',
       items: [
-          { text: 'Fluig Express', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-express-activity-7117273800534061056-DpGa?utm_source=share&utm_medium=member_desktop' },
-          { text: 'WCM - Gestão de portais', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-wcm-gest%C3%A3o-activity-7117274801831866368-EwUB?utm_source=share&utm_medium=member_desktop' },
-          { text: 'BPM/ECM Intermediate', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-bpm-activity-7117273526251761664--DKA?utm_source=share&utm_medium=member_desktop' },
-          { text: 'Desenvolvimento de processos BPM/ECM Advanced', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274448159739904-QdHJ?utm_source=share&utm_medium=member_desktop' },
-          { text: 'Desenvolvimento de Portais com WCM', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_eu-recebi-um-novo-certificado-fluig-desenvolvimento-activity-7117274000367468544-ih4W?utm_source=share&utm_medium=member_desktop' },
+          { text: 'Fluig Express', link: 'https://www.linkedin.com/in/gabriel331/' },
+          { text: 'WCM - Gestão de portais', link: 'https://www.linkedin.com/in/gabriel331/' },
+          { text: 'BPM/ECM Intermediate', link: 'https://www.linkedin.com/in/gabriel331/' },
+          { text: 'Desenvolvimento de processos BPM/ECM Advanced', link: 'https://www.linkedin.com/in/gabriel331/' },
+          { text: 'Desenvolvimento de Portais com WCM', link: 'https://www.linkedin.com/in/gabriel331/' },
       ]
   },
   
