@@ -7,6 +7,10 @@
   .foto {
     display: none; /* Esconde a imagem em dispositivos menores */
   }
+  .orientacao, p{
+    align-items: center;
+    text-align: center;
+  }
 }
 p, a{
   font-size: 18px;

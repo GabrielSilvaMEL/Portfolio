@@ -65,10 +65,5 @@ h2,h4,p{
   }
 @media (max-width: 768px) {
    
-  
-    /* Reduz os botões para telas pequenas */
-    #about .gap-16 {
-      flex-direction: column; /* Alinha verticalmente */
-      gap: 12px;
-    }
+
   }

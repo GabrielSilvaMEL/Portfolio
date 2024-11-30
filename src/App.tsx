@@ -10,7 +10,7 @@ const certifications = [
   {
       title: 'TOEIC - Listening and Reading Test',
       items: [
-          { text: 'Listening and Reading Test - 860/990 points', link: 'https://www.linkedin.com/posts/gabrielsilvalves331_gostaria-de-compartilhar-minha-pontua%C3%A7%C3%A3o-activity-7099858525459230720-9U1H?utm_source=share&utm_medium=member_desktop' }
+          { text: 'Listening and Reading Test - 860/990 points', link: 'https://www.linkedin.com/in/gabriel331/' }
       ]
   },
   {
@@ -37,7 +37,7 @@ const experiences = [
       description: 'Secretaria Municipal de Presidente Prudente | +1 Ano',
       responsibilities: ['Desenvolvi e implementei soluções para o sistema utilizado por mais de 50 unidades de saúde pública na cidade de Presidente Prudente, Brasil',
       'Participei ativamente das atualizações do sistema, suporte técnico e treinamento de usuários',
-      'Responsável por todo o desenvolvimento de novas tecnologias e atualização de funcionalidades antigas.']
+      'Responsável pelo desenvolvimento de novas tecnologias e atualização de funcionalidades antigas.']
   },
   {
       title: 'PROFESSOR',

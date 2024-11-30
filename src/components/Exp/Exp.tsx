@@ -11,8 +11,9 @@ type ExpProps = {
 const Exp: React.FC<ExpProps> = ({ experiences }) => {
     return (
         <div className='container mb-5'>
-            <h3 className='title fw-800 mb-3 text-center' id='exp'>EXPERIÊNCIAS</h3>
-            <div className='row'>
+                <h2 className='zain-bold mb-0 mt-3 text-center' id='exp'>Experiências</h2>
+                <h4 className="zain-bold color-gray mb-3 text-center">Onde já trabalhei</h4>            
+                <div className='row'>
                 {experiences.map((exp, index) => (
                     <div className='col-md-6 mb-4' key={index}>
                         <div className='card h-100'>

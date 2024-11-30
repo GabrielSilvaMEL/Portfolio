@@ -5,15 +5,7 @@ import corvo from "../../img/corvo.png";
 const Hero=()=>{
     return(
         <div className='d-flex flex-row justify-content-around align-items-center vh100 container p-3' id='home'>
-            <div className="d-flex flex-column col-md-8 col-sm-12">
-                {/* <div className="d-flex flex-row col-auto gap-16 align-items-center text-center justify-content-left contato-div">
-                    <p className='mb-0'>Entre em contato!</p>
-                    <a href="https://www.linkedin.com/in/gabrielsilvalves331/" title="LinkedIn"
-                        className="fab fa-linkedin-in" target="_blank"></a>
-                    <a href="https://github.com/gabrielsilvamel" title="Github" className="fab fa-github"
-                        target="_blank"></a>
-                    
-                </div> */}
+            <div className="d-flex flex-column col-md-8 col-sm-12 orientacao">
                 <h2><span className='span-dev zain-bold  mt-0'>Gabriel Silva</span></h2>
                 <h4 className='poppins-500 mt-0 mb-0 color-gray'>Desenvolvedor Full-Stack</h4>
                 <p className='color-gray fw-500 mb-2'>Formado em <span className='color-text fw-700 mb-2'>Análise e Desenvolvimento de Sistemas</span></p>
